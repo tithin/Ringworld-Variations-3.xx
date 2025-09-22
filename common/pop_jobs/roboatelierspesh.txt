@@ -1,0 +1,271 @@
+##################################
+########### SPECIALIST ###########
+##################################
+
+robo_Casual_Labour = {
+	category = complex_drone
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_smuggling_rings
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_specialist_job
+
+	resources = {
+		category = planet_Casual_Labour
+		produces = {
+			alloys = 6
+		}
+		upkeep = {
+			minerals = 24
+		}
+	}
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+	 shipclass_starbase_build_speed_mult = 0.05 ## 
+	 shipclass_military_station_build_speed_mult = 0.05
+	 starbase_upgrade_speed_mult = 0.05
+	}
+
+	weight = {
+		weight = @specialist_job_weight # Fairly important job
+		mult = value:job_weights_modifier|JOB|Casual_Labour|RESOURCE|alloys|
+		modifier = {
+			factor = 5
+			has_job = robo_Casual_Labour
+		}
+	}
+}
+
+robo_Armourer = {
+	category = complex_drone
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_smuggling_rings
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_specialist_job
+
+	resources = {
+		category = planet_Armourer
+		produces = {
+			alloys = 6
+		}
+		upkeep = {
+			minerals = 24
+		}
+	}
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		shipclass_starbase_hull_mult = 0.05
+		shipclass_military_station_hull_mult = 0.05
+	}
+
+	weight = {
+		weight = @specialist_job_weight # Fairly important job
+		mult = value:job_weights_modifier|JOB|Casual_Labour|RESOURCE|alloys|
+		modifier = {
+			factor = 5
+			has_job = robo_Armourer
+		}
+	}
+}
+
+
+robo_mad_scientists = {
+	category = complex_drone
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_research_lab_3
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_Mad_Scientists
+		produces = {
+			physics_research = 6
+			engineering_research = 6
+			society_research = 6
+		}
+		upkeep = {
+			alloys = 25
+			volatile_motes = 3
+			rare_crystals = 3
+		}
+	}
+		triggered_country_modifier = {
+			potential = {
+				always = yes
+			}
+		shipclass_starbase_damage_mult = 0.10
+		shipclass_military_station_damage_mult = 0.10
+		}
+		weight = {
+			weight = @specialist_job_weight # Fairly important job
+			mult = value:job_weights_modifier|JOB|mad_scientist|researcher|
+			modifier = {
+				factor = 5
+				has_job = robo_mad_scientists
+			}
+		}
+	}
+
+	
+robo_forgeprentice = {
+	category = complex_drone
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_foundry_2
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_specialist_job
+
+	resources = {
+		category = planet_Forgeprentice
+		produces = {
+			alloys = 10
+		}
+		upkeep = {
+			minerals = 25
+			volatile_motes = 3
+		}
+	}
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_metallurgists_alloys_produces_add = 1
+		planet_metallurgists_minerals_upkeep_add = 2	
+		planet_artisans_consumer_goods_produces_add = 1
+		planet_artisans_consumer_goods_upkeep_add = 2
+	}
+
+	weight = {
+		weight = @specialist_job_weight # Fairly important job
+		mult = value:job_weights_modifier|JOB|forgeprentice|RESOURCE|alloys|
+		modifier = {
+			factor = 2
+			is_enslaved = yes
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 5
+			has_job = robo_forgeprentice
+		}
+	}
+}
+
+robo_LivingMetalSmith = {
+	category = complex_drone
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_foundry_3
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_specialist_job
+
+	resources = {
+		category = planet_LivingMetalSmith
+		upkeep = {
+			sr_living_metal = 0.1
+			alloys = 20
+		}
+	}
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		megastructure_build_speed_add = 0.05	
+	}
+
+	weight = {
+		weight = @specialist_job_weight # Fairly important job
+		mult = value:job_weights_modifier|JOB|LivingMetalSmith
+		modifier = {
+			factor = 2
+			is_enslaved = yes
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 5
+			has_job = robo_LivingMetalSmith
+		}
+	}
+}
+# Scrapmaster
+robo_Scrapmaster = {
+	category = complex_drone
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_imperial_concession_port
+	icon = miner
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_specialist_job
+
+	resources = {
+		category = planet_Scrapmaster
+		produces = {
+			minerals = 25
+		}
+		upkeep = {
+			energy = 50
+			volatile_motes = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_miners_minerals_produces_add = 4
+	}
+	
+		weight = {
+			weight = @specialist_job_weight # Fairly important job
+			mult = value:job_weights_modifier|JOB|Scrapmaster|RESOURCE|minerals|
+			modifier = {
+				factor = 5
+				has_job = robo_Scrapmaster
+			}
+		}
+	}

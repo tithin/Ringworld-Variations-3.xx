@@ -1,0 +1,80 @@
+##############################
+# Alchemist
+##############################
+
+zerg_Alchemist = {
+	category = complex_drone
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_pre_ftl_radio_telescope
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_specialist_job
+
+	resources = {
+		category = planet_Alchemists
+		produces = {
+			volatile_motes = 5
+			exotic_gases = 5
+			rare_crystals = 5
+		}
+		upkeep = {
+			minerals = 150
+			energy = 200
+		}
+	}
+		weight = {
+			weight = @specialist_job_weight # Fairly important job
+			mult = value:job_weights_modifier|JOB|Alchemist|RESOURCE|rare_crystals|
+			modifier = {
+				factor = 5
+				has_job = zerg_Alchemist
+			}
+		}
+	}
+	
+##############################
+# Colonist
+##############################
+
+zerg_Colonist_admin = {
+	category = complex_drone
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_pre_ftl_radio_telescope
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_specialist_job
+
+triggered_country_modifier = {
+	planet_colony_development_speed_mult = 0.25
+}
+
+	resources = {
+		category = planet_Colonist_admin
+		produces = {
+			consumer_goods = 5
+		}
+		upkeep = {
+			food = 20
+		}
+	}
+		weight = {
+			weight = @specialist_job_weight # Fairly important job
+			mult = value:job_weights_modifier|JOB|Colonist|
+			modifier = {
+				factor = 5
+				has_job = zerg_Colonist_admin
+			}
+		}
+	}

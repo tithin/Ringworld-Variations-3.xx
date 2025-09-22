@@ -1,0 +1,97 @@
+#root = planet
+
+@stickiness = 10
+@stickiness_low = 5
+
+# Synth Augmentation Atelier
+synth_Augmentation_atelier = {
+	icon = GFX_colony_type_workers
+
+	potential = {
+		uses_district_set = rw_atelier
+		exists = owner
+	}
+
+	planet_modifier = {
+		planet_immigration_pull_mult = 0.2
+		planet_jobs_produces_mult = 0.05
+		pop_growth_speed = 0.15
+		planet_pop_assembly_mult = 0.15
+		planet_pop_assembly_organic_mult = 0.15
+	}
+
+	weight_modifier = {
+		base = 100
+	}
+}
+
+# Synth Subsidization
+synth_Subsidization_atelier = {
+	icon = GFX_colony_type_normal_colony
+
+	potential = {
+		is_artificial = yes
+		uses_district_set = rw_atelier
+		exists = owner
+	}
+
+	planet_modifier = {
+		planet_immigration_pull_mult = 0.2
+		planet_pops_upkeep_mult = -0.05
+		pop_growth_speed = 0.15
+		planet_pop_assembly_mult = 0.15
+		planet_pop_assembly_organic_mult = 0.15
+	}
+
+	weight_modifier = {
+		base = 100
+	}
+}
+#####################
+# Admin
+#####################
+
+# Synth Augmentation admin
+synth_Augmentation_admin = {
+	icon = GFX_colony_type_workers
+
+	potential = {
+		uses_district_set = rw_admin
+		exists = owner
+	}
+
+	planet_modifier = {
+		planet_immigration_pull_mult = 0.2
+		planet_jobs_produces_mult = 0.05
+		pop_growth_speed = 0.15
+		planet_pop_assembly_mult = 0.15
+		planet_pop_assembly_organic_mult = 0.15
+	}
+
+	weight_modifier = {
+		base = 100
+	}
+}
+
+# Synth Subsidization admin
+synth_Subsidization_admin = {
+	icon = GFX_colony_type_normal_colony
+
+	potential = {
+		is_artificial = yes
+		uses_district_set = rw_admin
+		exists = owner
+	}
+
+	planet_modifier = {
+		planet_immigration_pull_mult = 0.2
+		planet_pops_upkeep_mult = -0.05
+		pop_growth_speed = 0.15
+		planet_pop_assembly_mult = 0.15
+		planet_pop_assembly_organic_mult = 0.15
+	}
+
+	weight_modifier = {
+		base = 100
+	}
+}

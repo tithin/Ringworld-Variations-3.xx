@@ -1,0 +1,117 @@
+##############################
+# traversal trance - intended to be used to make it easier to get to gateway activation
+###############################
+ traversal_trance = {
+	resources = {
+		category = artifact_actions
+			cost = {
+				minor_artifacts = 1500
+			}
+	}
+	ai_weight = {
+		weight = 100
+	}
+
+	potential = {
+		has_technology = "tech_traversal_trance"
+		NOT = { has_technology = tech_gateway_activation } ## { has_country_flag = traversal_trance_triggered }
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = "Your Scientists have already discovered this."
+			NOT = { has_technology = tech_gateway_activation }
+		}
+	}
+
+	effect = {
+		custom_tooltip = traversal_trance_desc
+		hidden_effect = {
+			add_modifier = {
+				modifier = "traversal_trance_decision_used" 
+				days = 30
+			}
+		owner = {
+			country_event = { id = traversal_trance.1 }
+		}
+ 	}
+}
+}
+##############################
+# gregarious gateways - intended to be used to make it easier to get to gateway construction
+###############################
+gregarious_gateways = {
+	resources = {
+		category = artifact_actions
+			cost = {
+				minor_artifacts = 1500
+			}
+	}
+	ai_weight = {
+		weight = 100
+	}
+
+	potential = {
+		has_technology = "tech_gregarious_gateways"
+		NOT = { has_technology = tech_gateway_construction } ## { has_country_flag = gregarious_gateways_triggered }
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = "Your Scientists have already discovered this."
+			NOT = { has_technology = tech_gateway_construction }
+		}
+	}
+
+	effect = {
+		custom_tooltip = tech_gregarious_gateways_desc
+		hidden_effect = {
+			add_modifier = {
+				modifier = "gregarious_gateways_decision_used" 
+			}
+		owner = {
+			country_event = { id = gregarious_gateways.1 }
+		}
+ 	}
+}
+}
+
+##############################
+# engineering ecstasy - intended to be used to make it easier to get to megastructures
+###############################
+
+engineering_ecstasy = {
+	resources = {
+		category = artifact_actions
+			cost = {
+				minor_artifacts = 1500
+			}
+	}
+	ai_weight = {
+		weight = 100
+	}
+
+	potential = {
+		has_technology = "tech_engineering_ecstasy"
+		NOT = { has_technology = tech_mega_engineering } ## { has_country_flag = engineering_ecstasy_triggered }
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = "Your Scientists have already discovered this."
+			NOT = { has_technology = tech_mega_engineering }
+		}
+	}
+
+	effect = {
+		custom_tooltip = tech_engineering_ecstasy_desc
+		hidden_effect = {
+			add_modifier = {
+				modifier = "engineering_ecstasy_decision_used" 
+			}
+		owner = {
+			country_event = { id = engineering_ecstasy.1 }
+		}
+ 	}
+}
+}

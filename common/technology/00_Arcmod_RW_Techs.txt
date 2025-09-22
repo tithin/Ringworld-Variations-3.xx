@@ -1,0 +1,887 @@
+######################################
+# Decision Technologies - Admin
+######################################
+
+tech_rw_admin = {
+	cost = @tier5weight1
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	ai_update_type = all
+	prerequisites = {
+		"tech_mega_engineering" "tech_ring_world"
+	}
+	prereqfor_desc = {
+		custom = { title = "tech_rw_admin_desc"	desc = "tech_rw_admin_desc" }
+	}
+	start_tech = no
+	is_rare = yes
+
+	weight_modifier = {
+		factor = 1000
+	}
+
+	potential = {
+		host_has_dlc = "Utopia"
+	}
+
+	ai_weight = {
+		factor = @best_megastructure_ai_tech_factor
+
+	}
+}
+
+######################################
+# Decision Technologies - Atelier
+######################################
+
+tech_rw_atelier = {
+	cost = @tier5weight1
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	ai_update_type = all
+	prerequisites = {
+		"tech_mega_engineering" "tech_ring_world"
+	}
+	prereqfor_desc = {
+		custom = { title = "tech_rw_atelier_desc"	desc = "tech_rw_atelier_desc" }
+	}
+	start_tech = no
+	is_rare = yes
+
+	weight_modifier = {
+		factor = 1000
+	}
+
+	potential = {
+		host_has_dlc = "Utopia"
+	}
+
+	ai_weight = {
+		factor = @best_megastructure_ai_tech_factor
+
+	}
+}
+
+######################################
+# Decision Technologies - Minor Artifacts
+######################################
+
+tech_traversal_trance = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = @tier3weight3
+	prerequisites = { "tech_hyper_drive_3" }
+
+	prereqfor_desc = {
+		custom = {
+			title = tech_traversal_trance_effects
+			desc = tech_traversal_trance_effects
+		}
+	}
+
+	potential = {
+		NOT = { has_technology = tech_gateway_activation }
+	}
+
+	weight_modifier = {
+		factor = 5
+		modifier = {
+			factor = 2
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_2 }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_3 }
+			}
+		}
+		modifier = {
+			factor = 5
+			has_tradition = tr_discovery_adopt
+		}
+
+		modifier = {
+			factor = @ap_grasp_the_void_travel_tech
+			has_ascension_perk = ap_grasp_the_void
+		}
+		modifier = {
+			factor = @eager_explorer_effect
+			is_eager_explorer_empire = yes
+		}
+
+		modifier = {
+			factor = 1
+			NOR = {
+				OR = {
+					has_seen_any_bypass = gateway
+					has_seen_any_bypass = lgate
+				}
+				any_relation = {
+					is_country_type = default
+					has_communications = ROOT
+					has_technology = tech_gateway_activation
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 4
+			OR = {
+				owns_any_bypass = gateway
+				owns_any_bypass = lgate
+			}
+		}
+	}
+
+	ai_weight = {
+
+		modifier = {
+			factor = 2
+			is_ai = no #auto-research
+		}
+	}
+}
+
+tech_gregarious_gateways = {
+	cost = @tier4cost3
+	area = physics
+	tier = 4
+	category = { particles }
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = @tier3weight3
+	prerequisites = { "tech_gateway_activation" }
+
+	prereqfor_desc = {
+		custom = {
+			title = tech_gregarious_gateways_effects
+			desc = tech_gregarious_gateways_effects
+		}
+	}
+
+	potential = {
+		NOT = { has_technology = tech_gateway_construction }
+	}
+
+	weight_modifier = {
+		factor = 5
+		modifier = {
+			factor = 2
+			NOR = {
+				has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_2 }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_3 }
+			}
+		}
+		modifier = {
+			factor = 5
+			has_tradition = tr_discovery_adopt
+		}
+
+		modifier = {
+			factor = @ap_grasp_the_void_travel_tech
+			has_ascension_perk = ap_grasp_the_void
+		}
+		modifier = {
+			factor = @eager_explorer_effect
+			is_eager_explorer_empire = yes
+		}
+
+		modifier = {
+			factor = 1
+			NOR = {
+				OR = {
+					has_seen_any_bypass = gateway
+					has_seen_any_bypass = lgate
+				}
+				any_relation = {
+					is_country_type = default
+					has_communications = ROOT
+					has_technology = tech_gateway_activation
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 4
+			OR = {
+				owns_any_bypass = gateway
+				owns_any_bypass = lgate
+			}
+		}
+	}
+
+	ai_weight = {
+
+		modifier = {
+			factor = 2
+			is_ai = no #auto-research
+		}
+	}
+}
+
+tech_engineering_ecstasy = {
+	cost = @tier4cost3
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = @tier3weight3
+	prerequisites = { "tech_starbase_5" "tech_battleships" "tech_zero_point_power"  }
+
+	prereqfor_desc = {
+		custom = {
+			title = tech_engineering_ecstasy_effects
+			desc = tech_engineering_ecstasy_effects
+		}
+	}
+
+	potential = {
+		NOT = { has_technology = tech_mega_engineering }
+	}
+
+	weight_modifier = {
+		factor = 5
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_2 }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_3 }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_mega_engineering
+		}
+		
+		modifier = {
+			factor = 1.5
+			count_starbase_sizes = {
+				starbase_size = starbase_starhold
+				count >= 1
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			count_starbase_sizes = {
+				starbase_size = starbase_starhold
+				count >= 2
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			count_starbase_sizes = {
+				starbase_size = starbase_starhold
+				count >= 3
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			count_starbase_sizes = {
+				starbase_size = starbase_starhold
+				count >= 4
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			count_starbase_sizes = {
+				starbase_size = starbase_starhold
+				count >= 5
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			count_starbase_sizes = {
+				starbase_size = starbase_starhold
+				count >= 6
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			count_starbase_sizes = {
+				starbase_size = starbase_citadel
+				count >= 1
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			count_starbase_sizes = {
+				starbase_size = starbase_citadel
+				count >= 2
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			count_starbase_sizes = {
+				starbase_size = starbase_citadel
+				count >= 3
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			count_starbase_sizes = {
+				starbase_size = starbase_citadel
+				count >= 4
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			count_starbase_sizes = {
+				starbase_size = starbase_citadel
+				count >= 5
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			count_starbase_sizes = {
+				starbase_size = starbase_citadel
+				count >= 6
+			}
+		}
+
+		modifier = {
+			factor = 2
+			any_owned_planet = {
+				is_planet_class = pc_habitat
+			}
+		}
+
+		modifier = {
+			factor = 1.5
+			any_neighbor_country = {
+				has_technology = tech_mega_engineering
+			}
+		}
+
+		modifier = {
+			factor = 20
+			OR = {
+				has_any_megastructure_in_empire = yes
+				has_origin = origin_shattered_ring
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @best_megastructure_ai_tech_factor
+
+	}
+}
+
+
+######################################
+# Technologies - Buildings
+######################################
+
+tech_alchemists_lab_t1 = {
+	cost = @tier5cost1
+	area = engineering
+	tier = 5
+	category = { materials }
+	ai_update_type = all
+	prerequisites = {
+	"tech_rw_atelier"
+	}
+	prereqfor_desc = {
+	custom = { title = "tech_alchemists_lab_t1_desc"	desc = "tech_alchemists_lab_t1_desc" } 
+	}
+	start_tech = no
+	is_rare = yes
+
+	weight_modifier = {
+	factor = 1000
+	}
+
+	potential = {
+	host_has_dlc = "Utopia"
+	}
+
+	ai_weight = {
+	factor = @best_megastructure_ai_tech_factor
+
+	}
+}
+
+tech_alchemists_lab_t2 = {
+	cost = @tier5cost2
+	area = engineering
+	tier = 5
+	category = { materials }
+	ai_update_type = all
+	prerequisites = {
+		"tech_alchemists_lab_t1"
+	}
+	prereqfor_desc = {
+		custom = { title = "tech_alchemists_lab_t2_desc"	desc = "tech_alchemists_lab_t2_desc" } 
+	}
+	start_tech = no
+	is_rare = yes
+	
+	weight_modifier = {
+		factor = 1000
+	}
+	
+	potential = {
+		host_has_dlc = "Utopia"
+	}
+	
+	ai_weight = {
+		factor = @best_megastructure_ai_tech_factor
+	
+	}
+}
+
+tech_alchemists_lab_t3 = {
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	category = { materials }
+	ai_update_type = all
+	prerequisites = {
+		"tech_alchemists_lab_t2"
+	}
+	prereqfor_desc = {
+		custom = { title = "tech_alchemists_lab_t3_desc"	desc = "tech_alchemists_lab_t3_desc" }  ## honestly, if I don't include this in here, the technology has a sook about not being used in spite of it being required for stuff. oh well. 
+	}
+	start_tech = no
+	is_rare = yes
+	
+	weight_modifier = {
+		factor = 1000
+	}
+	
+	potential = {
+		host_has_dlc = "Utopia"
+	}
+	
+	ai_weight = {
+		factor = @best_megastructure_ai_tech_factor
+	
+	}
+}
+
+tech_Archaelogist = {
+	cost = @tier1cost2
+	area = physics
+	tier = 1
+	category = { computing }
+	ai_update_type = all
+	prerequisites = {
+		"tech_automated_exploration"
+	}
+	start_tech = no
+	
+	prereqfor_desc = {
+		custom = { title = "It belongs in a Museum. Yours."	desc = "building_archaelogy_desc" }
+	}
+
+	weight_modifier = {
+
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+
+		modifier = {
+			factor = 2.0
+			is_ai = no
+			years_passed > 10
+		}
+
+		modifier = {
+			factor = 2.0
+			is_ai = no
+			years_passed > 15
+		}
+
+		modifier = {
+			factor = 2.0
+			is_ai = no
+			years_passed > 20
+		}
+
+		modifier = {
+			factor = 2.0
+			num_owned_planets > 5
+		}
+
+		modifier = {
+			factor = 2.0
+			num_owned_planets > 10
+		}
+
+		modifier = {
+			factor = 2.0
+			num_owned_planets > 15
+		}
+
+		modifier = {
+			factor = 2.0
+			num_owned_planets > 20
+		}
+	}
+
+	ai_weight = {
+
+	}
+}
+
+tech_colonist_admin_building = {
+	cost = @tier1cost2
+	area = society
+	tier = 1
+	category = { biology }
+	ai_update_type = all
+	prerequisites = {
+		"tech_colonial_centralization"
+	}
+	start_tech = no
+	is_rare = yes
+	
+	weight_modifier = {
+
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+
+		modifier = {
+			factor = 2.0
+			is_ai = no
+			years_passed > 10
+		}
+
+		modifier = {
+			factor = 2.0
+			is_ai = no
+			years_passed > 15
+		}
+
+		modifier = {
+			factor = 2.0
+			is_ai = no
+			years_passed > 20
+		}
+
+		modifier = {
+			factor = 2.0
+			num_owned_planets > 5
+		}
+
+		modifier = {
+			factor = 2.0
+			num_owned_planets > 10
+		}
+
+		modifier = {
+			factor = 2.0
+			num_owned_planets > 15
+		}
+
+		modifier = {
+			factor = 2.0
+			num_owned_planets > 20
+		}
+	}
+
+	ai_weight = {
+
+	}
+}
+
+tech_spymaster = {
+	area = physics
+	tier = 4
+	cost = @tier4cost2
+	category = { computing }
+	prerequisites = { "tech_encryption_3" "tech_decryption_3"}
+	weight = @tier3weight3
+	is_rare = yes
+
+	weight_modifier = {
+
+		modifier = {
+			factor = 0.1
+			NOR = {
+				is_ai = yes # AIs don't get the informative event that flags this
+				has_country_flag = first_spynetwork
+			}
+		}
+		modifier = {
+			factor = 5
+			has_tradition = tr_subterfuge_adopt
+		}
+	}
+
+	ai_weight = {
+
+	}
+	prereqfor_desc = {
+		custom = { title = "tech_spymaster_desc"	desc = "tech_spymaster_desc" }
+	}
+}
+
+###################################
+# Technologies - Journeyman Synthetic Resources
+###################################
+# synthetic base - requirement to unlock synthetic betharian, arcanite and chimaeric planetary decisions
+
+tech_synthetic_base = {
+	cost = @tier1cost2
+	area = engineering
+	tier = 2
+	category = { materials }
+	prerequisites = { "tech_mineral_purification_1" "tech_power_hub_1" "tech_food_processing_1"  }
+	weight = @tier1weight2
+	is_rare = yes
+
+	prereqfor_desc = {
+		custom = { title = "tech_synthetic_base_effects"	desc = "tech_synthetic_base_desc" }
+	}
+}
+
+# mineral arcanite Refining - planetary decision
+tech_mine_arcanite_decision = {
+	cost = @tier1cost2
+	area = engineering
+	tier = 2
+	category = { materials }
+	prerequisites = { "tech_synthetic_base" }
+	weight = @tier1weight2
+	is_rare = yes
+
+	weight_modifier = {
+		factor = 2
+
+	}
+
+	ai_weight = {
+
+	}
+}
+
+# custom mining building
+tech_mine_arcanite = {
+	cost = @tier1cost2
+	area = engineering
+	tier = 2
+	category = { materials }
+	prerequisites = { "tech_mine_arcanite_decision" }
+	weight = @tier1weight2
+
+	weight_modifier = {
+		factor = 2
+
+	}
+
+	ai_weight = {
+
+	}
+}
+
+#betharian deposit decision
+#betharian doesn't require its own building, already defined.
+tech_mine_betharian_decision = {
+	cost = @tier1cost2
+	area = physics
+	tier = 2
+	category = { field_manipulation }
+	prerequisites = { "tech_synthetic_base" }
+	weight = @tier1weight2
+	is_rare = yes
+
+	weight_modifier = {
+		factor = 2
+
+	}
+
+	ai_weight = {
+
+	}
+}
+
+# chimaeric deposit decision
+tech_chimaeric_decision = {
+	cost = @tier1cost2
+	area = society
+	tier = 2
+	category = { biology }
+	prerequisites = { "tech_synthetic_base" }
+	weight = @tier1weight2
+	is_rare = yes
+
+	weight_modifier = {
+		factor = 2
+
+	}
+
+	ai_weight = {
+
+	}
+}
+
+# custom food building
+tech_chimaeric_farm = {
+	cost = @tier1cost2
+	area = society
+	tier = 2
+	category = { biology }
+	prerequisites = { "tech_chimaeric_decision" }
+	weight = @tier1weight2
+
+	weight_modifier = {
+		factor = 2
+
+	}
+
+	ai_weight = {
+
+	}
+}
+
+###################################
+# Technologies - Intermediate Synthetic Resources
+###################################
+tech_synthetic_intermediate = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	category = { materials }
+	prerequisites = { "tech_synthetic_base" "tech_mine_arcanite" "tech_mine_betharian_decision" "tech_chimaeric_farm" }
+	weight = @tier2weight2
+	is_rare = yes
+
+	prereqfor_desc = {
+		custom = { title = "tech_synthetic_intermediate_effects"	desc = "tech_synthetic_intermediate_desc" }
+	}
+}
+
+tech_alloys_deposit_decision = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	category = { materials }
+	prerequisites = { "tech_synthetic_intermediate" }
+	weight = @tier2weight2
+	is_rare = yes
+}
+
+tech_cg_deposit_decision = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	category = { materials }
+	prerequisites = { "tech_synthetic_intermediate" }
+	weight = @tier2weight2
+	is_rare = yes
+
+
+		potential = {
+			exists = owner
+			owner = {
+				country_uses_consumer_goods = yes
+			}
+		}
+}
+
+
+tech_alloys_building_synth = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	category = { materials }
+	prerequisites = { "tech_alloys_deposit_decision" }
+	weight = @tier2weight2
+	is_rare = yes
+}
+
+tech_cg_building_synth = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	category = { materials }
+	prerequisites = { "tech_cg_deposit_decision" }
+	weight = @tier2weight2
+	is_rare = yes
+
+	potential = {
+		exists = owner
+		owner = {
+			country_uses_consumer_goods = yes
+		}
+	}
+}
+
+###################################
+# Technologies - Intermediate Synthetic Resources
+###################################
+
+tech_synthetic_advanced = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	category = { materials }
+	prerequisites = { "tech_synthetic_intermediate" "tech_alloys_deposit_decision" "tech_cg_deposit_decision" }
+	weight = @tier2weight2
+	is_rare = yes
+
+	prereqfor_desc = {
+		custom = { title = "tech_synthetic_advanced_effects"	desc = "tech_synthetic_advanced_desc" }
+	}
+}
+
+tech_crystals_deposit_decision = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	category = { materials }
+	prerequisites = { "tech_synthetic_advanced" }
+	weight = @tier3weight2
+	is_rare = yes
+}
+
+tech_gasses_deposit_decision = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	category = { materials }
+	prerequisites = { "tech_synthetic_advanced" }
+	weight = @tier3weight2
+	is_rare = yes
+}
+
+tech_motes_deposit_decision = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	category = { materials }
+	prerequisites = { "tech_synthetic_advanced" }
+	weight = @tier3weight2
+	is_rare = yes
+}

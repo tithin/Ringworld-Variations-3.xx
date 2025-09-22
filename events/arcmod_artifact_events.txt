@@ -1,0 +1,87 @@
+##############################
+# Arcmod Events
+##############################
+
+namespace = traversal_trance
+
+country_event = {
+	id = traversal_trance.1
+	title = traversal_trance.name
+	desc = traversal_trance.desc
+	picture = GFX_evt_engineering_research
+
+	trigger = {
+		has_modifier = "traversal_trance_decision_used"
+	}
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = "traversal_trance_triggered"
+	}
+
+	option = {
+		name = traversal_trance.a
+		custom_tooltip = traversal_trance.a.desc
+		add_tech_progress = {
+			tech = tech_gateway_activation
+			progress = 0.5
+		}
+	}
+}
+
+namespace = gregarious_gateways
+
+country_event = {
+	id = gregarious_gateways.1
+	title = gregarious_gateways.name
+	desc = gregarious_gateways.desc
+	picture = GFX_evt_engineering_research
+
+	trigger = {
+		has_modifier = "gregarious_gateways_decision_used"
+	}
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = "gregarious_gateways_triggered"
+	}
+
+	option = {
+		name = gregarious_gateways.a
+		custom_tooltip = gregarious_gateways.a.desc
+		add_tech_progress = {
+			tech = tech_gateway_construction
+			progress = 0.5
+		}
+	}
+}
+
+namespace = engineering_ecstasy
+
+country_event = {
+	id = engineering_ecstasy.1
+	title = engineering_ecstasy.name
+	desc = engineering_ecstasy.desc
+	picture = GFX_evt_engineering_research
+
+	trigger = {
+		has_modifier = "engineering_ecstasy_decision_used"
+	}
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = "engineering_ecstasy_triggered"
+	}
+
+	option = {
+		name = engineering_ecstasy.a
+		custom_tooltip = engineering_ecstasy.a.desc
+		add_tech_progress = {
+			tech = tech_mega_engineering
+			progress = 0.5
+		}
+	}
+}

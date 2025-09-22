@@ -1,0 +1,701 @@
+﻿l_english:
+ ####################################
+ # Random Notes to make things easier later
+ #################################### 
+# all gone, nosy. 
+
+ ####################################
+ # Jobs - Specialist
+ ####################################
+ job_Casual_Labour:0 "Casual Labourer"
+ job_Casual_Labour_plural:0 "Casual Labourers"
+ job_Casual_Labour_desc:0 "This mobile workforce moves through your empire system to system at your direction, to ensure that your systems are exactly as fortified as you demand.\nHas stared into the void so much that it's absolutely stared back into them.\n Will be among the first to join The Worm. What was, will be."
+ job_Casual_Labour_effect_desc:0 "Decreases §G£shipclass_starbase£§! and §GDefense platform%§! build time by §G5%§! per job."
+ mod_job_Casual_Labour_add:0 "$job_Casual_Labour$ Jobs"
+#
+ job_Armourer:0 "Armourer"
+ job_Armourer_plural:0 "Starbase Armourers"
+ job_Armourer_desc:0 "These Metallurgists are specialized in improving the hull and armour of our deep space citadels.\nThey take great pride in hiding as many pictorial genital depictions as they can on your starbases."
+ job_Armourer_effect_desc:0 "These Arcane sigils reinforce your £shipclass_starbase£ £ship_stats_hitpoints£ by §G5%§! per job."
+ mod_job_Armourer_add:0 "$job_Armourer$ Jobs"
+#
+ job_mad_scientists:0 "Mad Scientist"
+ job_mad_scientists_plural:0 "Mad Scientists"
+ job_mad_scientists_desc:0 "These mad scientists are held on a very tight leash, with a very specific goal in mind: making anyone who would attack our entrenched positions regret it.\nThey are constantly working on new and exciting ways to carve brazen images into the Hull of your opponents. "
+ job_mad_scientists_effect_desc:0 "Improves £shipclass_starbase£ £ship_stats_damage£ by §G10%! per job."
+ mod_job_mad_scientists_add:0 "$job_mad_scientists$ Jobs"
+# 
+ job_forgeprentice:0 "Forgeprentice"
+ job_forgeprentice_plural:0 "Forgeprentices"
+ job_forgeprentice_desc:0 "Our Forgeprentices work at the micro level of our empire, improving our Empire output at the cost of additional mineral expense.\nIt's inefficient, but if all you need is extra output, our forgeprentices will get the job done."
+ job_forgeprentice_effect_desc:0 "Improves $job_foundry$ £alloys£ & $job_artisan$ Consumer Goods output by §G1§! per job, at the cost of §RIncreased! £minerals£ upkeep by §R2§! §REMPIRE Wide§!."
+ mod_job_forgeprentice_add:0 "$job_forgeprentice$ Jobs"
+#
+ job_LivingMetalSmith:0 "Living Metal Smith"
+ job_LivingMetalSmith_plural:0 "Living Metal Smiths"
+ job_LivingMetalSmith_desc:0 "These Mega-Engineers believe the key to large scale implementation of Megastructures is Living Metal and they have proven this is true at a micro level.\nThey now work at a macro level to make your will manifest."
+ job_LivingMetalSmith_effect_desc:0 "These individuals increase your §MMegastructure Base Build Speed§! by §G0.05§! (multiplicative with other increases)."
+ mod_job_LivingMetalSmith_add:0 "$job_LivingMetalSmith$ Jobs" 
+#
+ job_Registrar:0 "Registrar"
+ job_Registrar_plural:0 "Registrars"
+ job_Registrar_desc:0 "That any Galactic Nation becomes inefficient as it gains in size is a universal constant.\nOur Registrars work to centralize and utilize the Just in Time principle, reducing waste and inefficiencies generated through our Planetary governers oversight by getting the resources that are needed to where they're needed, as they're needed. "
+ job_Registrar_effect_desc:0 "These crucial wheels in our empire reduce £empire_sprawl£ by §G1%§!"
+ mod_job_Registrar_add:0 "$job_Registrar$ Jobs"
+#
+ job_Influencer:0 "Influencer"
+ job_Influencer_plural:0 "Youtubers"
+ job_Influencer_desc:0 "Little known to their audience, this influencer is in fact bought and paid for by your empire."
+ job_Influencer_effect_desc:0 "They work to improve your §Y£empire£§! £happiness£ by §G5%§!, and to ensure that your §Y£empire£§! compliance with Governing Ethics, raising their attractiveness by §G1%§!"
+ mod_job_Influencer_add:0 "$job_Influencer$ Jobs"
+#
+ job_ArcModArch:0 "Archaelogist"
+ job_ArcModArch_plural:0 "Archaelogists"
+ job_ArcModArch_desc:0 "These individuals have a firm belief that regardless of where it presently resides, it belongs in a museum.\nYours, specifically."
+ job_ArcModArch_effect_desc:0 "They work tirelessly with your scientists to improve their performance in £archaeology£ excavation by §G25%§!."
+ mod_job_ArcModArch_add:0 "$job_ArcModArch$ Jobs"
+#
+ job_Cryptographer:0 "Cryptographer"
+ job_Cryptographer_plural:0 "Cryptographers"
+ job_Cryptographer_desc:0 "These individuals are terrified of PCryptographeren-Testers, and work to bolster your nations electronic security.\nThey're extremely immature and and most of their group chat focusses on asking where the ring on a penrose ringworld is."
+ job_Cryptographer_effect_desc:0 "Improves §Y£empire£§! Encryption by §G1§!"
+ mod_job_Cryptographer_add:0 "$job_Cryptographer$ Jobs"
+#
+ job_Pentester:0 "Network Penetration Tester"
+ job_Pentester_plural:0 "Network Penetration Testers"
+ job_Pentester_desc:0 "These individuals focus and refine your empires ability to break into the networks of other empires improving your §Y£empire£§! Codebreaking by §G1§!.\nThey're also extremely immature and half of their group chat is some variation of 'heh, penetration' "
+ mod_job_Pentester_add:0 "$job_Pentester$ Jobs"
+#
+ job_Coach:0 "Life Coach"
+ job_Coach_plural:0 "Coaches"
+ job_Coach_desc:0 "These Life Coaches are assigned to your leaders at birth.\nAs a collective work to improve the speed at which your Leaders grow and learn improving §Y£empire£§! Leader Experience Gain by §G20§!%."
+ mod_job_Coach_add:0 "$job_Coach$ Jobs"
+#
+ job_Scrapmaster:0 "Scrapmaster"
+ job_Scrapmaster_plural:0 "Scrapmasters"
+ job_Scrapmaster_desc:0 "These junkyard masters are well focussed on getting the best out of your Scrap Miners, they drastically increase the amount of minerals they generate. "
+ mod_job_Scrapmaster_add:0 "$job_Scrapmaster$ Jobs"
+#
+ job_Alchemist:0 "Alchemist"
+ job_Alchemist_plural:0 "Alchemists"
+ job_Alchemist_desc:0 "A role sister in spirit to the mad scientist. These $job_alchemist_plural$ are responsible for the efficient synthesization of Strategic Resources."
+ mod_job_Alchemist_add:0 "$job_Alchemist$ Jobs"
+#
+ job_Colonist_admin:0 "Colonial Administrator"
+ job_Colonist_admin_plural:0 "Colonist Administrators"
+ job_Colonist_admin_desc:0 "$job_colonist_admin_plural$ help to improve the speed at which your New Colonies become operational by 20%. "
+ mod_job_Colonist_admin_add:0 "$job_Colonist_admin$ jobs"
+ ####################################
+ # Jobs - Ruler
+ ####################################
+ job_Local_Councillor:0 "Local Councillor"
+ job_Local_Councillor_plural:0 "Local Councillors"
+ job_Local_Councillor_desc:0 "These Bureaucrats work at a local level to implement your edicts, improving £time£ §GEdict Duration§! by §G5%§!.\NHaving a local representative also helps to improve your influence, increasing monthly £influence£ by §M1§!."
+ mod_job_Local_Councillor_add:0 "$job_Local_Councillor$ Jobs"
+#
+ job_District_Planner:0 "District Planner"
+ job_District_Planner_plural:0 "District Planners"
+ job_District_Planner_desc:0 "These Architects aren't just qualified as Building Designers & Environmental Engineers, but also in Feng Shui.\NWith hundreds of thousands of hours each in Sim City, Cities Skyline, and OpenTTD, they will build the best §M8===D§! that your empire has ever seen."
+ job_District_Planner_effect_desc:0 "Each of these hard working individuals improves your £building£ build speed & to clearance speed of planetary £blocker£ by §G20%§!."
+ mod_job_District_Planner_add:0 "$job_District_Planner$ Jobs"
+#
+ job_Forgemaster:0 "Forgemaster"
+ job_Forgemaster_plural:0 "Forgemasters"
+ job_Forgemaster_desc:0 "Our Forgemasters work at a macro level of our empire, reviewing and coordinating output from both our local hubs and their Forgeprentices, to ensure that our Shipwrights have what they need when they need it."
+ job_Forgemaster_effect_desc:0 "£job_Forgemaster£ $job_forgemaster_plural$ improve £alloys£ & Consumer Goods output across your §Y£empire£§! by §G5%§!."
+ mod_job_Forgemaster_add:0 "$job_Forgemaster$ Jobs"
+# 
+ job_Shipwright:0 "Shipwright"
+ job_Shipwright_plural:0 "Shipwrights"
+ job_Shipwright_desc:0 "Our Shipwrights are our eyes and ears, they coordinate and work with our shipyards to optimize local workforce.\nThey improve performance wherever they go to ensure that our shipyards have what they need when they need it, just in time.\nThey improving Ship Construction £ship_stats_build_time£ by §G10%§! Empire Wide."
+ mod_job_Shipwright_add:0 "$job_Shipwright$ Jobs"
+# 
+ job_Council_Aid:0 "Councillor Aid"
+ job_Council_Aid_plural:0 "Councillor Aids"
+ job_Council_Aid_desc:0 "These individuals work with your Leadership Council to make your will manifest, improving §Y£empire£§! £decision£ enactment speed by §G5%§!"
+ mod_job_Council_Aid_add:0 "$job_Council_Aid$ Jobs"
+#
+ job_Scientist_Coordinator:0 "Scientist Coordinator"
+ job_Scientist_Coordinator_plural:0 "Scientist Coordinators"
+ job_Scientist_Coordinator_desc:0 "These Coordinators are both capable Scientists in their own right, as well as capable Administrators."
+ job_Scientist_Coordinator_effect_desc:0 "These scientists improve Planetary Researcher job output by §M2.5§! in £physics£, £society£ & £engineering£ "
+ mod_job_Scientist_Coordinator_add:0 "$job_Scientist_Coordinator$ Jobs"
+#
+ job_Medical_Overseer:0 "Medical Overseer"
+ job_Medical_Overseer_plural:0 "Medical Overseers"
+ job_Medical_Overseer_desc:0 "A Capable Surgeon in their own right, this overseer helps to coordinate the healthcare employees around your empire."
+ job_Medical_Overseer_effect_desc:0 "£job_Medical_Overseer£ $job_Medical_Overseer_plural$ improves your planetary £mod_pop_growth_speed£ & §Y$MOD_POP_GROWTH_SPEED$§! and £mod_planet_pop_assembly_organic_mult£, §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_MULT$§!, and provide additional 3 additional £job_healthcare£ per planet, empire wide."
+ mod_job_Medical_Overseer_add:0 "$job_Medical_Overseer$ Jobs"
+ ####################################
+ # Districts - Atelier
+ ####################################
+ district_rw_at_bastion:0 "Bastion District"
+ district_rw_at_bastion_desc:0 "Recognizing the inefficiencies of our current ability to claim and defend areas of the galaxy, our government has dedicated resources to cultivating a mobile workforce that can bolster the speed with which we can claim and fortify an area of space."
+ district_rw_at_bastion_plural:0 "Bastion Districts"
+#
+ district_rw_at_armoire:0 "Armoury District"
+ district_rw_at_armoire_plural:0 "Armoury Districts"
+ district_rw_at_armoire_desc:0 "Recognizing that our Citadels have become more of a speedbump than a serious challenge to our opponents, this workforce takes pride in making our Citadels durable and frustrating to overcome."
+#
+ district_rw_at_weapons_lab:0 "Experimental Weapons Laboratory"
+ district_rw_at_weapons_lab_plural:0 "Experimental Weapons Laboratories"
+ district_rw_at_weapons_lab_desc:0 "A series of Laboratories dedicated to improving the damage output of your starbases. "
+#
+ district_rw_at_forgemaster:0 "Forgemaster Foundry"
+ district_rw_at_forgemaster_desc:0 "This district serves as a centralized area for the implementation of our 'Forgemaster & Forgeprentice' system."
+ district_rw_at_forgemaster_plural:0 "Forgemaster Foundries"
+#
+ district_rw_at_shipwright:0 "Shipyard Co-ordination District"
+ district_rw_at_shipwright_desc:0 "Home to the Shipwrights Guild. This fierce union is dedicated to Starship Creation, and improves Ship build speed empire wide. "
+ district_rw_at_shipwright_plural:0 "Shipyard Co-ordination Districts"
+#
+ district_rw_at_megas:0 "Megastructural Support District"
+ district_rw_at_megas_plural:0 "Megastructural Support Districts"
+ district_rw_at_megas_desc:0 "There is a burning need across our people to make our mark on the galaxy, like many of the ancient precursor races that predate our own people.\n\nThis district will help to centralize our development of Megastructures, and improve the base speed that they are developed. "
+#
+ district_rw_scrapland:0 "Scrap Land District"
+ district_rw_scrapland_desc:0 "These districts are the home of your Empires recycling plants, this Ringworld District is home to $job_scrap_miner_plural$ and $job_scrapmaster_plural$, helping to bolster your empires £minerals£ income by recycling old Technology. "
+ district_rw_scrapland_plural:0 "Scrap Land Districts"
+ ####################################
+ # Districts - Admin
+ ####################################
+#
+ district_rw_admin_registry:0 "Registry District"
+ district_rw_admin_registry_desc:0 "This District houses the Beating Heart of your Adminstrative empire.\nThe local residents work to reduce inefficiencies of scale by reducing the relative size of your empire. "
+ district_rw_admin_registry_plural:0 "Registrar Districts"
+#
+ district_rw_admin_govt:0 "Government Administrative Zone"
+ district_rw_admin_govt_desc:0 "The Beating Heart of Local Government.\nThis District is home to several individuals with a wide variety of skills that help to ease your administrative burden. "
+ district_rw_admin_govt_plural:0 "Government Administrative Zones"
+#
+ district_rw_admin_healthcare:0 "Healthcare Complex"
+ district_rw_admin_healthcare_desc:0 "The Administrative heart of your peoples medical needs.\nA hospital in its own right, it also works with local branches on your other planets to meet the healthcare needs of your population.\nWorth noting that if you mention the phrase "Lupus" to these overseers, they are likely to have something of a mental breakdown."
+ district_rw_admin_healthcare_plural:0 "Healthcare Complexes"
+#
+district_rw_admin_spah:0 "Spymaster Enclave"
+district_rw_admin_spah_desc:0 "A Clandestine area of your planet that appears on no maps. "
+district_rw_admin_spah_plural:0 "Spymaster Enclaves"
+#
+ district_rw_admin_builder:0 "City Planning District"
+ district_rw_admin_builder_desc:0 "This District is the home to your Architects and to the Master Builders guild.\nThey work with your local Governers and Administrators to improve the speed at which your planets construct buildings and clear planetary deposits. "
+ district_rw_admin_builder_plural:0 "City Planning Districts"
+#
+ district_rw_admin_uni:0 "University Campus"
+ district_rw_admin_uni_desc:0 "A Sprawling University campus, filled to the brim with education on every topic you could look for.\nHome to the infamous ROBOT HOUSE, with honorary Praeses ad vitam, Bender Bending Rodriguez now in charge of Curriculum.\nYes, even when you've got multiple districts, don't overthink it, it's just a 4x. "
+ district_rw_admin_uni_plural:0 "University Campus District"
+#
+ district_rw_cityd:0 "Local Ringworld Administration District"
+ district_rw_cityd_desc:0 "A seat of local government dedicated to meeting the administrative needs of your empire, by providing Amenities, Security and a local DMV. "
+ district_rw_cityd_plural:0 "Local Ringworld Administration Districts"
+#
+ district_rw_cityt:0 "Local Ringworld Administration District"
+ district_rw_cityt_desc:0 "A seat of local government dedicated to meeting the administrative needs of your empire, by providing Amenities, Security and a local DMV. "
+ district_rw_cityt_plural:0 "Local Ringworld Administration Districts"
+ ####################################
+ # Planet Class Definitions
+ ####################################
+ pc_rw_at_habitable:0 "Industrial Ring Segment"
+ pc_rw_at_habitable_desc:0 "Part of a Ringworld Megastructure. This Segment has been heavily modified to help Focus on your Empire's Nicher Industrial needs. "
+ pc_rw_at_habitable_adj:0 "Artificial"
+ mod_pc_rw_at_habitable_habitability:0 "$pc_ringworld_habitable$"
+ trait_pc_rw_at_habitable_preference:0 "Ring World Preference"
+ trait_pc_rw_at_habitable_preference_desc:0 "$trait_pc_arctic_preference_desc$"
+#
+ pc_rw_admin_habitable:0 "Administrative Ring Segment"
+ pc_rw_admin_habitable_desc:0 "Part of a Ringworld Megastructure. This Segment has been heavily modified to help Focus on your Empire's Administrative needs. "
+ pc_rw_admin_habitable_adj:0 "Artificial"
+ mod_pc_rw_admin_habitable_habitability:0 "$pc_ringworld_habitable$"
+ trait_pc_rw_admin_habitable_preference:0 "Ring World Preference"
+ trait_pc_rw_admin_habitable_preference_desc:0 "$trait_pc_arctic_preference_desc$"
+ ####################################
+ # RW-PC-Change Decisions
+ ####################################
+ decision_rw_atelier_project:0 "Atelier Ringworld"
+ decision_rw_atelier_project_desc:0 "Terraforms your Ringworld to focus on your Industrial Base. "
+ decision_rw_atelier_project_effects:0 "Further terraforms this §Y$pc_ringworld_habitable$§! into a §Y$pc_rw_at_habitable$§!.\n Atelier Ringworld Jobs have a §RHIGH§! Upkeep for each of their jobs, in line with their powerful effects. "
+#
+ decision_rw_admin_project:0 "Administrative Ringworld"
+ decision_rw_admin_project_desc:0 "Terraforms your Ringworld with a focus on assisting your Empire Adminsitration. "
+ decision_rw_admin_project_effects:0 "Further terraforms this §Y$pc_ringworld_habitable$§! into a §Y$pc_rw_admin_habitable$§!.\n Administrative Ringworld Jobs have a §RHIGH§! Upkeep for each of their jobs, in line with their powerful effects. "
+#
+ decision_rw_standard_project:0 "Standard Ringworld"
+ decision_rw_standard_project_desc:0 "Reverts the Atelier-completed Terraformation of your customized Ringworld back to a Standard Ringworld. "
+ decision_rw_standard_project_effects:0 "Further terraforms this §YAtelier Ringworld§! back into a §Y$pc_ringworld_habitable$§!."
+#
+ decision_rw_admin_standard_project:0 "Standard Ringworld"
+ decision_rw_admin_standard_project_desc:0 "Reverts the Administrative-completed Terraformation of your customized Ringworld back to a Standard Ringworld. "
+ decision_rw_admin_standard_project_effects:0 "Further terraforms this §YAdministrative Ringworld§! back into a §Y$pc_ringworld_habitable$§!."
+ ##########################################
+ # Planetary Building View Job descriptions. 
+ ##########################################
+ #Specialist Jobs
+ ##########################################
+ planet_Casual_Labour:0 "Casual Labour jobs"
+ planet_Armourer:0 "Starbase Armourer jobs"
+ planet_Mad_Scientists:0 "Mad Scientist jobs"
+ planet_Forgeprentice:0 "Forgeprentice jobs"
+ planet_LivingMetalSmith:0 "Living Metal Smith jobs"
+ planet_Registrar:0 "Registrar jobs"
+ planet_Influencer:0 "Influencer jobs"
+ planet_ArcModArch:0 "Archaelogist jobs"
+ planet_Cryptographer:0 "Cryptographer jobs"
+ planet_PenTester:0 "Network Penetration jobs"
+ planet_Coach:0 "Coach jobs"
+##########################################
+# Ruler Jobs
+##########################################
+ planet_Local_Councillor:0 "Local Councillor jobs"
+ planet_District_Planner:0 "District Planner jobs"
+ planet_Forgemaster:0 "Forgemaster jobs"
+ planet_Shipwright:0 "Shipwright jobs"
+ planet_Councillor_Aid:0 "Councillor Aid jobs"
+ planet_Scientist_Coordinator:0 "Scientist Coordinator jobs"
+ planet_Medical_Overseer:0 "Medical Overseer jobs"
+ ####################################
+ # Misc-Localisations
+ ####################################
+ mod_shipclass_constructor_build_speed_mult:0 "Construction Ship Build Speed"
+ mod_shipclass_colonizer_build_speed_mult:0 "Colonization Ship Construction Speed"
+ mod_shipclass_starbase_build_speed_mult:0 "Outpost Construction Speed"
+ mod_shipclass_military_special_build_speed_mult:0 "Special Military Ship Construction Speed"
+ mod_planet_artisans_consumer_goods_upkeep_add:0 "£minerals£ $minerals$ Upkeep of £job_artisan£ "
+ traversal_trance_decision_used:0 "Traversal Trance."
+ traversal_trance_decision_used_effect:0 "You have decided to commune with the unknown "
+ ##########################################
+ # Description of each job's effects.  
+ ##########################################
+ # Specialist Jobs
+ ##########################################
+  job_planet_Casual_Labour:0 "£job_Casual_Labour£ $job_Casual_Labour_plural$ decreases §G£shipclass_starbase£§! §GStarbase§! and §GDefense platform§! build time by §G5%§! per pop. "
+  job_planet_Armourer:0 "£job_Armourer£ $job_Armourer_plural$ reinforce your §G£shipclass_starbase£§! Starbase §G£ship_stats_hitpoints£§! Hull Points by §G5%§! per pop."
+  job_planet_Mad_Scientists:0 "£job_mad_scientists£ $job_mad_scientists_plural$ improves §G£shipclass_starbase£§! Starbase §G£ship_stats_damage£§! Firepower by §G10%§! per pop."
+  job_planet_Forgeprentice:0 "£job_forgeprentice£ $job_forgeprentice_plural$ improves $job_foundry$ §G£alloys£§! output by §G1§! per job, at the cost of §RIncreased§! $job_foundry$ £minerals£ upkeep by §R2§! per pop."
+  job_planet_LivingMetalSmith:0 "£job_LivingMetalSmith£ $job_LivingMetalSmith_plural$ increase your §MMegastructure Base Build Speed§! by §G0.05§! (multiplicative with other increases) per pop."
+  job_planet_Registrar:0 "£job_Registrar£ $job_Registrar_plural$ reduce §G£empire_sprawl£§! Empire Sprawl by §G1%§! per pop."
+  job_planet_Influencer:0 "£job_Influencer£ $job_Influencer_plural$ improve your §Y£empire£§! §Y£happiness£§! and §YGoverning Ethics§!, raising happiness by §G5%§! and §YGoverning Ethics attraction§! §G1%§! per pop. "
+  job_planet_ArcModArch:0 "£job_ArcModArch£ $job_ArcModArch_plural$ improve §Y£archaeology£§! excavation by §G25§! per pop."
+  job_planet_Cryptographer:0 "£job_Cryptographer£ $job_Cryptographer_plural$ improves §Y£empire£§! Encryption by §G1§! per pop."
+  job_planet_Pentester:0 "£job_Pentester£ $job_Pentester_plural$ improves your §Y£empire£§! Codebreaking by §G1§! per pop."
+  job_planet_Coach:0 "£job_Coach£ $job_Coach_plural$ improves your §Y£empire£§! Leader Experience Gain by §G20%§! per pop."
+  job_planet_Scrapmaster:0 "£job_miner£ $job_Scrapmaster_plural$ boosts the Mineral production of your $job_scrap_miner_plural$. "
+  job_planet_Alchemist:0 "£job_alchemist£ $job_Alchemist_plural$ synthesize vast quantities of Strategic Resources for a Commensurate expense. "
+ ##########################################
+ # Ruler Jobs
+ ##########################################
+  job_planet_Local_Councillor:0 "£job_Local_Councillor£ $job_Local_Councillor_plural$ improves £time£ §GEdict Duration§! by §G5%§! and monthly £influence£ by §M1§! per pop."
+  job_planet_District_Planner:0 "£job_District_Planner£ $job_District_Planner_plural$ improves your §G£building£ build speed & clearance speed§! of planetary £blocker£ by §G5%§! per pop."
+  job_planet_Forgemaster:0 "£job_Forgemaster£ $job_Forgemaster_plural$ improve §G£alloys£§! output across your §Y£empire£§! by §G5%§!."
+  job_planet_Shipwright:0 "£job_Shipwright£ $job_Shipwright_plural$ improve Ship Construction §G£ship_stats_build_time£§! by §G10%§! per pop."
+  job_planet_Council_Aid:0 "£job_Council_Aid£ $job_Council_Aid_plural$ improves §Y£empire£§! §G£decision£§! enactment speed by §G5%§!"
+  job_planet_Scientist_Coordinator:0 "£job_Scientist_Coordinator£ $job_Scientist_Coordinator_plural$ improves Planetary $job_researcher$ job output by §M2.5§! in £physics£, £society£ & £engineering£ per pop."
+  job_planet_Medical_Overseer:0 "£job_Medical_Overseer£ $job_Medical_Overseer_plural$ improves your planetary §Y£mod_pop_growth_speed£§!, §Y$MOD_POP_GROWTH_SPEED$§! and £mod_planet_pop_assembly_organic_mult£, §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_MULT$§!. They also provide 3 additional £job_healthcare£ job opportunities per planet, empire wide."
+ ##########################################
+ # Technologies
+ ##########################################
+  tech_rw_admin:0 "Ringworld Administrative Districts."
+  tech_rw_admin_desc:0 "§HUnlocks Decision:§!  $decision_rw_admin_project$ "
+  tech_rw_atelier:0 "Ringworld Atelier Districts."
+  tech_rw_atelier_desc:0 "§HUnlocks Decision:§! $decision_rw_atelier_project$  "
+  tech_alchemists_lab_t1:0 "Alchemists Laboratory"
+  tech_alchemists_lab_t1_desc:0 "§HUnlocks Building:§! $building_alchemists_lab_t1$  "
+  tech_alchemists_lab_t2:0 "Alchemists Manufactory"
+  tech_alchemists_lab_t2_desc:0 "§HUnlocks Building:§! $building_alchemists_lab_t2$ "
+  tech_alchemists_lab_t3:0 "Alchemists Guild"
+  tech_alchemists_lab_t3_desc:0 "§HUnlocks Building:§! $building_alchemists_lab_t3$ "
+  tech_Archaelogist:0 "Archaelogists Museum"
+  tech_Archaelogist_desc:0 "§HUnlocks Building:§! $building_archaelogy$"
+  tech_colonist_admin_building:0 "Colonial Administration"
+  tech_colonist_admin_building_desc:0 "§HUnlocks Building:§! $building_colonist_admin$ "
+  tech_spymaster:0 "Spymaster Administration"
+  tech_spymaster_desc:0 " "
+ ##########################################
+ # Buildings
+ ##########################################
+  building_alchemists_lab_t1:0 "Alchemists Laboratory"
+  building_alchemists_lab_t1_desc:0 "An Alchemist makes their home here, utilizing Mad Science to Synthesize vast quantities of Strategic Resources for your empire's use. "
+  building_alchemists_lab_t2:0 "Alchemists Manufactory"
+  building_alchemists_lab_t2_desc:0 "Good lord now there's two of them. "
+  building_alchemists_lab_t3:0 "Alchemists Guild"
+  building_alchemists_lab_t3_desc:0 "These upstanding individuals have gathered en masse to meet your empires ever evolving need for Strategic Resources. "
+  building_archaelogy:0 "Archaelogists Museum"
+  building_archaelogy_desc:0 "$job_ArcModArch$ helps to improve the efficiency of your Scientists Excavation speed. "
+  building_colonist_admin:0 "Colonial Administration Hub"
+  building_colonist_admin_desc:0 "$job_Colonist_admin_plural$ help to improve the speed at which your New Colonies become operational."
+  building_spymaster_desc:0 "$district_rw_admin_spah_desc$"
+  building_spymaster:0 "Spymaster Administrative Hub"
+ ##########################################
+ # Artifact Actions & Events
+ ##########################################
+ tech_traversal_trance:0 "Traversal Trance"
+ tech_traversal_trance_desc:0 "Frustrated by your societies lack of development of gateways, ruminate deeply on the prerequisites for traversing Gateways."
+ tech_traversal_trance_effects:0 "§HUnlocks Artifact Action:§! Traversal Trance, that further progresses the Gateway Feature."
+ traversal_trance.name:0 "You Meditate Deeply, falling into a trance. "
+ traversal_trance.desc:0 "Deeply frustrated by what you consider to be an unreasonably long time for your empire's scientists to crack the code on gateways, you follow the route of your ancestors, and snort Zro directly against all medical advice.\nYour mind wanders, staring down rabbit holes.\nAfter all, what is a gateway?\nWhat is Faster Than Light Travel?\nWhy bother with any of that when you can simply fold the two realities into place on top of each other.\nYou come back to yourself, grimacing at the mess you made while in your trance.\nYour secretary will never respect you again."
+ traversal_trance.a:0 "I picked the wrong day to give up Zro."
+ traversal_trance.a.desc:0 "Grants 50% progress towards Gateway Activation."
+ traversal_trance:0 "Traversal Trance"
+ traversal_trance_desc:0 "Places your Empire Leader into a Meditative State with Chemical Assistance to commune with the ineffable and figure out the secrets of Gateway Activations that have eluded your scientists so far."
+ gregarious_gateways_decision_used:0 "Gregarious Gateways Activated."
+ tech_gregarious_gateways:0 "Gregarious Gateways"
+ tech_gregarious_gateways_desc:0 "Frustrated by your societies lack of development of gateways, ruminate deeply on the prerequisites for the construction of Gateways."
+ tech_gregarious_gateways_effects:0 "§HUnlocks Artifact Action:§! Gregarious Gateways, that finalizes the Gateway Feature."
+ gregarious_gateways.name:0 "You Meditate Deeply, falling into a trance."
+ gregarious_gateways.desc:0 "Again, you find yourself lamenting your Head Researcher's inability to do their job.\nZro will not be sufficient this time, against all bounds of medicine, physics, and common sense, a scattering of stable and controlled Astral thread rests on your desk.\nYou snort it directly into yourself and as your active conciousness fades, you find yourself drifting through the stars.\nAstral Threads surround the galaxy and you realise - you've been here before.\nOver and Over.\nOver and Over.\nThe Key to gateways is clear to you now, you simply need to come up with an oversized Galactic Stapler - gateways follow the same principle.\nAs the weeks pass and you slowly but surely return to yourself as a Sapient being and not a drifting conciousness, your faith in your own existence is stricken, and you have lost your peoples respect. Permanently."
+ gregarious_gateways.a:0 "I picked the wrong day to give up drinking."
+ gregarious_gateways.a.desc:0 "Grants 50% progress towards Gateway Construction and a permanent 5% happiness Malus to your empire."
+ gregarious_gateways:0 "Gregarious Gateways"
+ gregarious_gateways_desc:0 "Places your Empire Leader into a Meditative State with the assistance of Astral Threads to commune and figure out the secrets of Gateway Constructions that have eluded your scientists so far."
+ engineering_ecstasy_decision_used:0 "Engineering Ecstasy Activated"
+ engineering_ecstasy.name:0 "You Meditate Deeply, falling into a trance."
+ engineering_ecstasy.desc:0 "Your local doctors have kept you away from all Anomalous materials since the last two incidents and have people on hand to prevent you from getting more. This said, you increasingly become more frustrated by your Empire's lack of Megastructures. How dare those fallen empires horde their ringworlds? You'd absolutely murder them all for a Dyson Sphere. Channeling pure rage you fall into a trance and commune with the ineffable, and it whispers back to you, revealing the secrets of Mega Engineering. As you come to, you find your secretary has handed in her resignation and gone on retreat. She didn't ask you for a reference. "
+ engineering_ecstasy.a:0 "Surely you're not serious?"
+ engineering_ecstasy.a.desc:0 "I am serious, and don't call me Shirley. Grants 50% progress towards Mega Engineering."
+ tech_engineering_ecstasy:0 "Engineering Ecstasy"
+ tech_engineering_ecstasy_desc:0 "Frustrated by your societies lack of development of Megastructures, ruminate deeply on the theory behind how they're built."
+ tech_engineering_ecstasy_effects:0 "§HUnlocks Artifact Action:§! Engineering Ecstasy, that enables further progression into Megastructures. "
+ engineering_ecstasy:0 "Engineering Ecstasy"
+ engineering_ecstasy_desc:0 "Places your Empire Leader into a Transcendental state of Rage to commune with the ineffable and figure out the secrets of Mega Engineering that have eluded your scientists so far."
+ ##########################################
+ # Robobros localisation - Admin Ruler
+ ##########################################
+ job_robo_Local_Councillor:0 "Robotic Representative"
+ job_robo_Local_Councillor_plural:0 "Robotic Representatives"
+ job_robo_Local_Councillor_desc:0 "These Bureaucratic drones work at a local level to implement your edicts, improving £time£ §GEdict Duration§! by §G5%§!.\NHaving a local representative also helps to improve your influence, increasing monthly £influence£ by §M1§!."
+ mod_job_robo_Local_Councillor_add:0 "$job_robo_Local_Councillor_plural$ Jobs"
+ job_robo_Council_Aid:0 "Representative Aid"
+ job_robo_Council_Aid_plural:0 "Representative Aids"
+ job_robo_Council_Aid_desc:0 "These individuals work with your Council and local Represntatives to make your will manifest, improving §Y£empire£§! £decision£ enactment speed by §G5%§!"
+ mod_job_robo_Council_Aid_add:0 "$job_robo_Council_Aid_plural$ Jobs"
+ job_robo_District_Planner:0 "District Planner"
+ job_robo_District_Planner_plural:0 "District Planners"
+ job_robo_District_Planner_desc:0 "These drones aren't just qualified as Building Designers & Environmental Engineers, but also in Feng Shui.\NWith hundreds of thousands of hours each in Sim City, Cities Skyline, and OpenTTD, they will build the best §M8===D§! that your empire has ever seen."
+ mod_job_robo_District_Planner_add:0 "$job_robo_District_Planner$ Jobs"
+ job_robo_Scientist_Coordinator:0 "Scientist Coordination Drone"
+ job_robo_Scientist_Coordinator_plural:0 "Scientist Coordination Drones"
+ job_robo_Scientist_Coordinator_desc:0 "These Coordinators are both capable Scientists in their own right, as well as capable Administrators."
+ mod_job_robo_Scientist_Coordinator_add:0 "$job_robo_Scientist_Coordinator$ Jobs"
+ job_robo_Medical_Overseer:0 "Medical Oversight Unit"
+ job_robo_Medical_Overseer_plural:0 "Medical Oversight Units"
+ job_robo_Medical_Overseer_desc:0 "A Capable Surgeon in their own right, this unit helps to coordinate the healthcare employees around your empire."
+ mod_job_robo_Medical_Overseer_add:0 "$job_robo_Medical_Overseer$ Jobs"
+ ##########################################
+ # Robobros localisation - Admin Specialist
+ ##########################################
+ job_robo_Registrar:0 "Registrar Unit"
+ job_robo_Registrar_plural:0 "Registrar Units"
+ job_robo_Registrar_desc:0 "These $job_robo_Registrar_plural$ work to reduce inefficiencies in your empire by reducing Empire Sprawl"
+ mod_job_robo_Registrar_add:0 "$job_robo_Registrar$ jobs"
+ job_robo_Influencer:0 "Youtuber"
+ job_robo_Influencer_plural:0 "Youtubers"
+ job_robo_Influencer_desc:0 "These Robotic Entertainers subtly increase your empire's happiness and governing ethics without their audience being any the wiser."
+ mod_job_robo_Influencer_add:0 "$job_robo_influencer$ jobs"
+ job_robo_ArcModArch:0 "Archaeologist Unit"
+ job_robo_ArcModArch_plural:0 "Archaeologist Units"
+ job_robo_ArcModArch_desc:0 "These $job_robo_ArcModArch_plural$ have a firm belief that regardless of where it presently resides, it belongs in a museum.\nYours, specifically.\nThey improve Archaelogy Excavation speed. "
+ mod_job_robo_ArcModArch_add:0 "$job_robo_ArcModArch$ jobs"
+ job_robo_Cryptographer:0 "Cyber Defense Unit"
+ job_robo_Cryptographer_plural:0 "Cyber Defense Units"
+ job_robo_Cryptographer_desc:0 "These Units principle focus is the electronic defense of your Empire and bolster your Empires Encryption. "
+ mod_job_robo_Cryptographer_add:0 "$job_robo_cryptographer$ jobs"
+ job_robo_Pentester:0 "Cyber Offense Unit"
+ job_robo_Pentester_plural:0 "Cyber Offense Units"
+ job_robo_Pentester_desc:0 "These Units principle focus is the electronic defense of your Empire and bolster your Empires Decryption."
+ mod_job_robo_Pentester_add:0 "$job_robo_Pentester$ jobs"
+ job_robo_Coach:0 "Coaching Unit"
+ job_robo_Coach_plural:0 "Coaching Units"
+ job_robo_Coach_desc:0 "These Coaching Units are assigned to your Leader Units at creation.\nAs a collective, they work to improve the speed at which your Leaders grow and learn improving §Y£empire£§! Leader Experience Gain by §G20§!%."
+ mod_job_robo_Coach_add:0 "$job_robo_Coach$ Jobs"
+ ##########################################
+ # Robobros localisation - Atelier Ruler
+ ##########################################
+ job_robo_Forgemaster:0 "ForgeMaster Unit"
+ job_robo_Forgemaster_plural:0 "ForgeMaster Units"
+ job_robo_Forgemaster_desc:0 "These Robotic Units are hand crafted to withstand the fire of our hottest furnaces, they work at the macro level of our empire improving £alloys£ & Consumer Goods output across your §Y£empire£§! by §G5%§! per unit. "
+ mod_job_robo_Forgemaster_add:0 "$job_robo_Forgemaster$ Jobs"
+ job_robo_Shipwright:0 "Shipwright"
+ job_robo_Shipwright_plural:0 "Shipwright Units"
+ job_robo_Shipwright_desc:0 ""Our $job_robo_Shipwright_plural$ are our eyes and ears, they coordinate and work with our shipyards to optimize local workforce.\nThey improve performance wherever they go to ensure that our shipyards have what they need when they need it, just in time.\nThey improving Ship Construction £ship_stats_build_time£ by §G10%§! Empire Wide.""
+ mod_job_robo_Shipwright_add:0 "$job_robo_Shipwright$ Jobs"
+ ##########################################
+ # Robobros localisation - Atelier Spesh
+ ##########################################
+ job_robo_Casual_Labour:0 "Casual Labour Unit"
+ job_robo_Casual_Labour_plural:0 "Casual Labour Units"
+ job_robo_Casual_Labour_desc:0 "This mobile workforce moves through your empire system to system at your direction, to ensure that your systems are exactly as fortified as you demand."
+ job_robo_Casual_Labour_effect_desc:0 "Decreases §G£shipclass_starbase£§! and §GDefense platform%§! build time by §G5%§! per job."
+ mod_job_robo_Casual_Labour_add:0 "$job_robo_Casual_Labour$ Jobs"
+#
+ job_robo_Armourer:0 "Armourer Unit"
+ job_robo_Armourer_plural:0 "Starbase Armoury Units"
+ job_robo_Armourer_desc:0 "These Metallurgists are specialized in improving the hull and armour of our deep space citadels.\nThey take great pride in hiding as many pictorial genital depictions as they can on your starbases."
+ job_robo_Armourer_effect_desc:0 "These Arcane sigils reinforce your £shipclass_starbase£ £ship_stats_hitpoints£ by §G5%§! per job."
+ mod_job_robo_Armourer_add:0 "$job_robo_Armourer$ Jobs"
+#
+ job_robo_mad_scientists:0 "Experimental Unit"
+ job_robo_mad_scientists_plural:0 "Experimental Units"
+ job_robo_mad_scientists_desc:0 "These $job_robo_mad_scientists_plural$ are held on a very tight leash, with a very specific goal in mind: making anyone who would attack our entrenched positions regret it.\nThey are constantly working on new and exciting ways to carve brazen images into the Hull of your opponents. "
+ job_robo_mad_scientists_effect_desc:0 "Improves £shipclass_starbase£ £ship_stats_damage£ by §G10%! per job."
+ mod_job_robo_mad_scientists_add:0 "$job_robo_mad_scientists$ Jobs"
+# 
+ job_robo_forgeprentice:0 "Forgeprentice Unit"
+ job_robo_forgeprentice_plural:0 "Forgeprentice Units"
+ job_robo_forgeprentice_desc:0 "Our $job_robo_forgeprentice_plural$ work at the micro level of our empire, improving our Empire output at the cost of additional mineral expense.\nIt's inefficient, but if all you need is extra output, our $job_robo_forgeprentice_plural$ will get the job done."
+ job_robo_forgeprentice_effect_desc:0 "Improves $job_foundry$ £alloys£ & $job_artisan$ Consumer Goods output by §G1§! per job, at the cost of §RIncreased! £minerals£ upkeep by §R2§! §REMPIRE Wide§!."
+ mod_job_robo_forgeprentice_add:0 "$job_robo_forgeprentice$ Jobs"
+#
+ job_robo_LivingMetalSmith:0 "Living Metal Smith"
+ job_robo_LivingMetalSmith_plural:0 "Living Metal Smith Units"
+ job_robo_LivingMetalSmith_desc:0 "These Mega-Engineers believe the key to large scale implementation of Megastructures is Living Metal and they have proven this is true at a micro level.\nThey now work at a macro level to make your will manifest."
+ job_robo_LivingMetalSmith_effect_desc:0 "These individuals increase your §MMegastructure Base Build Speed§! by §G0.05§! (multiplicative with other increases)."
+ mod_job_robo_LivingMetalSmith_add:0 "$job_robo_LivingMetalSmith$ Jobs" 
+#
+ job_robo_Scrapmaster:0 "Scrapmaster Unit"
+ job_robo_Scrapmaster_plural:0 "Scrapmaster Units"
+ job_robo_Scrapmaster_desc:0 "These junkyard masters are well focussed on getting the best out of your Scrap Miners, they drastically increase the amount of minerals they generate. "
+ mod_job_robo_Scrapmaster_add:0 "$job_robo_Scrapmaster$ Jobs"
+ ##########################################
+ # Robobros localisation - Building Jobs
+ ##########################################
+ job_robo_Alchemist:0 "Alchemy Unit"
+ job_robo_Alchemist_plural:0 "Alchemicy Units"
+ job_robo_Alchemist_desc:0 "A role sister in spirit to the $job_robo_mad_scientists_plural$. These $job_robo_alchemist_plural$ are responsible for the efficient synthesization of Strategic Resources."
+ mod_job_robo_Alchemist_add:0 "$job_robo_Alchemist$ Jobs"
+ job_robo_Colonist_admin:0 "Colony Administration Unit"
+ job_robo_Colonist_admin_plural:0 "Colonial Administration Units"
+ job_robo_Colonist_admin_desc:0 "$job_robo_colonist_admin_plural$ help to improve the speed at which your New Colonies become operational by §G20%§!. "
+ mod_job_robo_Colonist_admin_add:0 "$job_robo_Colonist_admin$ jobs"
+ ##########################################
+ # Zergling localisation - Admin Ruler
+ ##########################################
+ job_zerg_Local_Councillor:0 "Local Hive Cluster"
+ job_zerg_Local_Councillor_plural:0 "Local Hive Cluster"
+ job_zerg_Local_Councillor_desc:0 "These Bureaucratic drones work at a local level to implement your edicts, improving £time£ §GEdict Duration§! by §G5%§!.\NHaving a local representative also helps to improve your influence, increasing monthly £influence£ by §M1§!."
+ mod_job_zerg_Local_Councillor_add:0 "$job_zerg_Local_Councillor_plural$ Jobs"
+ job_zerg_Council_Aid:0 "Representative Aid"
+ job_zerg_Council_Aid_plural:0 "Representative Aids"
+ job_zerg_Council_Aid_desc:0 "These individuals work with your Council and local Represntatives to make your will manifest, improving §Y£empire£§! £decision£ enactment speed by §G5%§!"
+ mod_job_zerg_Council_Aid_add:0 "$job_zerg_Council_Aid_plural$ Jobs"
+ job_zerg_District_Planner:0 "District Planner"
+ job_zerg_District_Planner_plural:0 "District Planners"
+ job_zerg_District_Planner_desc:0 "These drones aren't just qualified as Building Designers & Environmental Engineers, but also in Feng Shui.\NWith hundreds of thousands of hours each in Sim City, Cities Skyline, and OpenTTD, they will build the best §M8===D§! that your empire has ever seen."
+ mod_job_zerg_District_Planner_add:0 "$job_zerg_District_Planner$ Jobs"
+ job_zerg_Scientist_Coordinator:0 "Scientist Coordination Drone"
+ job_zerg_Scientist_Coordinator_plural:0 "Scientist Coordination Drones"
+ job_zerg_Scientist_Coordinator_desc:0 "These Coordinators are both capable Scientists in their own right, as well as capable Administrators."
+ mod_job_zerg_Scientist_Coordinator_add:0 "$job_zerg_Scientist_Coordinator$ Jobs"
+ job_zerg_Medical_Overseer:0 "Medical Oversight drone"
+ job_zerg_Medical_Overseer_plural:0 "Medical Oversight drones"
+ job_zerg_Medical_Overseer_desc:0 "A Capable Surgeon in their own right, this drone helps to coordinate the healthcare employees around your empire."
+ mod_job_zerg_Medical_Overseer_add:0 "$job_zerg_Medical_Overseer$ Jobs"
+ ##########################################
+ # Zerg localisation - Admin Specialist
+ ##########################################
+ job_zerg_Registrar:0 "Registrar drone"
+ job_zerg_Registrar_plural:0 "Registrar drones"
+ job_zerg_Registrar_desc:0 "These $job_zerg_Registrar_plural$ work to reduce inefficiencies in your empire by reducing Empire Sprawl"
+ mod_job_zerg_Registrar_add:0 "$job_zerg_Registrar$ jobs"
+ job_zerg_Influencer:0 "Youtuber"
+ job_zerg_Influencer_plural:0 "Youtubers"
+ job_zerg_Influencer_desc:0 "These zergtic Entertainers subtly increase your empire's happiness and governing ethics without their audience being any the wiser."
+ mod_job_zerg_Influencer_add:0 "$job_zerg_influencer$ jobs"
+ job_zerg_ArcModArch:0 "Archaeologist drone"
+ job_zerg_ArcModArch_plural:0 "Archaeologist drones"
+ job_zerg_ArcModArch_desc:0 "These $job_zerg_ArcModArch_plural$ have a firm belief that regardless of where it presently resides, it belongs in a museum.\nYours, specifically.\nThey improve Archaelogy Excavation speed. "
+ mod_job_zerg_ArcModArch_add:0 "$job_zerg_ArcModArch$ jobs"
+ job_zerg_Cryptographer:0 "Cyber Defense drone"
+ job_zerg_Cryptographer_plural:0 "Cyber Defense drones"
+ job_zerg_Cryptographer_desc:0 "These drones principle focus is the electronic defense of your Empire and bolster your Empires Encryption. "
+ mod_job_zerg_Cryptographer_add:0 "$job_zerg_cryptographer$ jobs"
+ job_zerg_Pentester:0 "Cyber Offense drone"
+ job_zerg_Pentester_plural:0 "Cyber Offense drones"
+ job_zerg_Pentester_desc:0 "These drones principle focus is the electronic defense of your Empire and bolster your Empires Decryption."
+ mod_job_zerg_Pentester_add:0 "$job_zerg_Pentester$ jobs"
+ job_zerg_Coach:0 "Coaching drone"
+ job_zerg_Coach_plural:0 "Coaching drones"
+ job_zerg_Coach_desc:0 "These Coaching drones are assigned to your Leader drones at creation.\nAs a collective, they work to improve the speed at which your Leaders grow and learn improving §Y£empire£§! Leader Experience Gain by §G20§!%."
+ mod_job_zerg_Coach_add:0 "$job_zerg_Coach$ Jobs"
+ ##########################################
+ # Zerg localisation - Atelier Ruler
+ ##########################################
+ job_zerg_Forgemaster:0 "ForgeMaster drone"
+ job_zerg_Forgemaster_plural:0 "ForgeMaster drones"
+ job_zerg_Forgemaster_desc:0 "These hive drones are hand crafted to withstand the fire of our hottest furnaces, they work at the macro level of our empire improving £alloys£ & Consumer Goods output across your §Y£empire£§! by §G5%§! per drone. "
+ mod_job_zerg_Forgemaster_add:0 "$job_zerg_Forgemaster$ Jobs"
+ job_zerg_Shipwright:0 "Shipwright"
+ job_zerg_Shipwright_plural:0 "Shipwright drones"
+ job_zerg_Shipwright_desc:0 ""Our $job_zerg_Shipwright_plural$ are our eyes and ears, they coordinate and work with our shipyards to optimize local workforce.\nThey improve performance wherever they go to ensure that our shipyards have what they need when they need it, just in time.\nThey improving Ship Construction £ship_stats_build_time£ by §G10%§! Empire Wide.""
+ mod_job_zerg_Shipwright_add:0 "$job_zerg_Shipwright$ Jobs"
+ ##########################################
+ # zergbros localisation - Atelier Spesh
+ ##########################################
+ job_zerg_Casual_Labour:0 "Casual Labour drone"
+ job_zerg_Casual_Labour_plural:0 "Casual Labour drones"
+ job_zerg_Casual_Labour_desc:0 "This mobile workforce moves through your empire system to system at your direction, to ensure that your systems are exactly as fortified as you demand."
+ job_zerg_Casual_Labour_effect_desc:0 "Decreases §G£shipclass_starbase£§! and §GDefense platform%§! build time by §G5%§! per job."
+ mod_job_zerg_Casual_Labour_add:0 "$job_zerg_Casual_Labour$ Jobs"
+#
+ job_zerg_Armourer:0 "Armourer drone"
+ job_zerg_Armourer_plural:0 "Starbase Armoury drones"
+ job_zerg_Armourer_desc:0 "These Metallurgists are specialized in improving the hull and armour of our deep space citadels.\nThey take great pride in hiding as many pictorial genital depictions as they can on your starbases."
+ job_zerg_Armourer_effect_desc:0 "These Arcane sigils reinforce your £shipclass_starbase£ £ship_stats_hitpoints£ by §G5%§! per job."
+ mod_job_zerg_Armourer_add:0 "$job_zerg_Armourer$ Jobs"
+#
+ job_zerg_mad_scientists:0 "Experimental drone"
+ job_zerg_mad_scientists_plural:0 "Experimental drones"
+ job_zerg_mad_scientists_desc:0 "These $job_zerg_mad_scientists_plural$ are held on a very tight leash, with a very specific goal in mind: making anyone who would attack our entrenched positions regret it.\nThey are constantly working on new and exciting ways to carve brazen images into the Hull of your opponents. "
+ job_zerg_mad_scientists_effect_desc:0 "Improves £shipclass_starbase£ £ship_stats_damage£ by §G10%! per job."
+ mod_job_zerg_mad_scientists_add:0 "$job_zerg_mad_scientists$ Jobs"
+# 
+ job_zerg_forgeprentice:0 "Forgeprentice drone"
+ job_zerg_forgeprentice_plural:0 "Forgeprentice drones"
+ job_zerg_forgeprentice_desc:0 "Our $job_zerg_forgeprentice_plural$ work at the micro level of our empire, improving our Empire output at the cost of additional mineral expense.\nIt's inefficient, but if all you need is extra output, our $job_zerg_forgeprentice_plural$ will get the job done."
+ job_zerg_forgeprentice_effect_desc:0 "Improves $job_foundry$ £alloys£ & $job_artisan$ Consumer Goods output by §G1§! per job, at the cost of §RIncreased! £minerals£ upkeep by §R2§! §REMPIRE Wide§!."
+ mod_job_zerg_forgeprentice_add:0 "$job_zerg_forgeprentice$ Jobs"
+#
+ job_zerg_LivingMetalSmith:0 "Living Metal Smith"
+ job_zerg_LivingMetalSmith_plural:0 "Living Metal Smith drones"
+ job_zerg_LivingMetalSmith_desc:0 "These Mega-Engineers believe the key to large scale implementation of Megastructures is Living Metal and they have proven this is true at a micro level.\nThey now work at a macro level to make your will manifest."
+ job_zerg_LivingMetalSmith_effect_desc:0 "These individuals increase your §MMegastructure Base Build Speed§! by §G0.05§! (multiplicative with other increases)."
+ mod_job_zerg_LivingMetalSmith_add:0 "$job_zerg_LivingMetalSmith$ Jobs" 
+#
+ job_zerg_Scrapmaster:0 "Scrapmaster drone"
+ job_zerg_Scrapmaster_plural:0 "Scrapmaster drones"
+ job_zerg_Scrapmaster_desc:0 "These junkyard masters are well focussed on getting the best out of your Scrap Miners, they drastically increase the amount of minerals they generate. "
+ mod_job_zerg_Scrapmaster_add:0 "$job_zerg_Scrapmaster$ Jobs"
+ ##########################################
+ # zergbros localisation - Building Jobs
+ ##########################################
+ job_zerg_Alchemist:0 "Alchemy drone"
+ job_zerg_Alchemist_plural:0 "Alchemicy drones"
+ job_zerg_Alchemist_desc:0 "A role sister in spirit to the $job_zerg_mad_scientists_plural$. These $job_zerg_alchemist_plural$ are responsible for the efficient synthesization of Strategic Resources."
+ mod_job_zerg_Alchemist_add:0 "$job_zerg_Alchemist$ Jobs"
+ job_zerg_Colonist_admin:0 "Colony Administration drone"
+ job_zerg_Colonist_admin_plural:0 "Colonial Administration drones"
+ job_zerg_Colonist_admin_desc:0 "$job_zerg_colonist_admin_plural$ help to improve the speed at which your New Colonies become operational by §G20%§!. "
+ mod_job_zerg_Colonist_admin_add:0 "$job_zerg_Colonist_admin$ jobs"
+ ##########################################
+ # Synthetics Localisations - 
+ ##########################################
+ # Buildings - Journeyman Synthesis
+ ##########################################
+ building_Arcanite_Crystal_mine:0 "Arcane Crystal Transmutation Station"
+ building_Arcanite_Crystal_mine_desc:0 "Arcane Crystals, mined from deep within the earth, are transmutated here in vast quantities to enhance Planetary Mineral output. "
+ building_Chimaeric_food_farm:0 "Chimaeric Slurry Farming"
+ building_Chimaeric_food_farm_desc:0 "Your scientists work tirelessly to convert the incredibly versatilic genetic slurry into your empire's favourite nutrients. "
+ ##########################################
+ # Technologies - Journeyman Building Unlocks
+ ##########################################
+ tech_mine_arcanite:0 "Arcanite Transmutation"
+ tech_mine_arcanite_desc:0 "§HUnlocks Building:§! $building_Arcanite_Crystal_mine$"
+ tech_chimaeric_farm:0 "Chimaeric Farming"
+ tech_chimaeric_farm_desc:0 "§HUnlocks Building:§! $building_Chimaeric_food_farm$."
+ ##########################################
+ # Technologies - Journeyman Synthesis
+ ##########################################
+ tech_synthetic_base:0 "Journeyman Synthesic Theory"
+ tech_synthetic_base_desc:0 "§HUnlocks Feature:§! Synthetic Resource Deposits" 
+ tech_synthetic_base_effects:0 "Preliminal research that enables further research into creation of Basic Resource Synthetic Deposits. " 
+ tech_mine_arcanite_decision:0 "Arcanite Crystal Growth"
+ tech_mine_arcanite_decision_desc:0 "§HUnlocks Decision:§! $decision_arcanite_deposit$ creation."
+ tech_mine_betharian_decision:0 "Betharian Transmutation"
+ tech_mine_betharian_decision_desc:0 "§HUnlocks Decision:§! $decision_betharian_deposit$ creation."
+ tech_chimaeric_decision:0 "Chimaeric Food Theory"
+ tech_chimaeric_decision_desc:0 "§HUnlocks Decision:§! $decision_chimaeric_deposit$ creation."
+ ##########################################
+ # Deposits - Journeyman
+ ##########################################
+ d_arcanite_deposit:0 "Arcane Crystal Deposit"
+ d_arcanite_deposit_desc:0 "This series of Crystals is not naturally occurring and requires significant investment to create.\nThis deposit requires the creation of the $building_Arcanite_Crystal_mine$ building to fully unlock its potential."
+
+ # no betharian because it's vanilla :) 
+
+ d_chimaeric_deposit:0 "Chimeric Slurry"
+ d_chimaeric_deposit_desc:0 "This Primordial Slurry is incredibly adaptable and entirely unnatural. This deposit requires the creation of the $building_Chimaeric_food_farm$ building to fully unlock its potential.  "
+ ##########################################
+ # Decisions - Journeyman
+ ##########################################
+ decision_arcanite_deposit:0 "§E1. Basic - Arcane Crystal Creation§!"
+ decision_arcanite_deposit_desc:0 "Utilizing minerals, these are transmuted into a self-sustaining, perpetually regrowing series of Synethic Arcane Crystals that enable further planetary specialisation in Mineral Production. "
+ decision_betharian_deposit:0 "§E1. Basic - Betharian Crystal Creation§!"
+ decision_betharian_deposit_desc:0 "Utilizing harvested energy, these are transmuted and converted into Synthetic Betharian Deposits enabling further planetary specialisation in Energy Production. "
+ decision_chimaeric_deposit:0 "§E1. Basic - Chimaeric Farm Creation§!"
+ decision_chimaeric_deposit_desc:0 "Utilizing DNA from places your scientists refuse to inform you of, these are condensed into a highly malleable slurry that in turn can be used to develop Synethic Food that enables further planetary specialisation in Food Production. "
+ mod_building_Arcanite_Crystal_mine_max:0 "Max $building_Arcanite_Crystal_mine$ "
+ mod_building_Chimaeric_food_farm_max:0 "Max $building_Chimaeric_food_farm$ "
+ ##########################################
+ # Colony Types
+ ##########################################
+ synth_Augmentation_admin:0 "Synthetic Ringworld Focus: Augmentation"
+ synth_Augmentation_admin_desc:0 "This Ringworld Segment is focussed on Augmenting our populations output. "
+ synth_Subsidization_admin:0 "Synthetic Ringworld Focus: Subsidization"
+ synth_Subsidization_admin_desc:0 "This Ringworld Segment is focussed on Subsidizing the demands of our populations resource needs. "
+ synth_Augmentation_atelier:0 "Synthetic Ringworld Focus: Augmentation"
+ synth_Augmentation_atelier_desc:0 "This Ringworld Segment is focussed on Augmenting our populations output. "
+ synth_Subsidization_atelier:0 "Synthetic Ringworld Focus: Subsidization"
+ synth_Subsidization_atelier_desc:0 "This Ringworld Segment is focussed on Subsidizing the demands of our populations resource needs. "
+ ##########################################
+ # Technologies - Intermediate Synthesis
+ ##########################################
+ tech_synthetic_intermediate:0 "Intermediate Synthetic Theory"
+ tech_synthetic_intermediate_desc:0 "§HUnlocks Feature:§! Intermediate Synthetic Deposits"
+ tech_synthetic_intermediate_effects:0 "Continued research that enables further research into creation of Journeyman Resource Synthetic Deposits. "
+ tech_alloys_deposit_decision:0 "Alloy Synthesic Patterns"
+ tech_alloys_deposit_decision_desc:0 "§HUnlocks Decision:§! $decision_alloy_deposit$ creation."
+ tech_cg_deposit_decision:0 "Consumer Goods Synthesis"
+ tech_cg_deposit_decision_desc:0 "§HUnlocks Decision:§! $decision_cg_deposit$ creation."
+ tech_alloys_building_synth:0 "Synthesis: Alloys"
+ tech_alloys_building_synth_desc:0 "§HUnlocks Building:§! $building_alloy_deposit_synth$"
+ tech_cg_building_synth:0 "Synthesis: Consumer Goods"
+ tech_cg_building_synth_desc:0 "§HUnlocks Building:§! $building_cg_deposit_synth$"
+ ##########################################
+ # Decisions - Intermediate Synthesis
+ ##########################################
+ decision_alloy_deposit:0 "§E2. Intermediate - Alloy Synthetic Patterns§!"
+ decision_alloy_deposit_desc:0 "With a sufficient investment of resources, you can enable an easing of the manual nature of Alloy creation.\nThis technology enables the creation of a deposit to boost your Nation's Alloy output."
+ decision_cg_deposit:0 "§E2. Intermediate - Consumer Good Patterns§!"
+ decision_cg_deposit_desc:0 "Your Empire's ever increasing demand for Consumer Good Amenities has found an answer in these patterns.\nWhen your private enterprise creates items that your public craves, those patterns can be loaded directly into these devices, leading to a substantial increase in Consumer good output."
+ mod_building_alloy_deposit_synth_max:0 "Max $building_alloy_deposit_synth$ "
+ mod_building_cg_deposit_synth_max:0 "Max $building_cg_deposit_synth$ "
+ ##########################################
+ # Deposits - Intermediate Synthesis
+ ##########################################
+ d_alloy_deposit_synth:0 "Alloy Crystal Mines"
+ d_alloy_deposit_synth_desc:0 "This series of Crystals is not naturally occurring and requires significant investment to create.\nThey are harvested in bulk and carved into Alloys.\nThis deposit requires the creation of the $building_alloy_deposit_synth$ building to fully unlock its potential."
+ d_cg_deposit_synth:0 "Consumer Goods Base Factory"
+ d_cg_deposit_synth_desc:0 "This Factory is owned by your Empire and utilized by Private Enterprise to ease the burden of Production on them.\nThis factory can be uplinked and utilized by third parties to boost their Commercial output.\nThis deposit requires the creation of the $building_cg_deposit_synth$ building to fully unlock its potential."
+ ##########################################
+ # Buildings - Intermediate Synthesis
+ ##########################################
+ building_alloy_deposit_synth:0 "Synthetic Alloy Factory"
+ building_alloy_deposit_synth_desc:0 "Alloy Crystals, mined from deep within the earth, are transmutated here in vast quantities to enhance Planetary Alloy output. "
+ building_cg_deposit_synth:0 "Private Enterprise HQ"
+ building_cg_deposit_synth_desc:0 "This building is owned by a Third Party Conglomerate who have entered into a Public / Private Partnership with your Empire to assist in meeting your Consumer Goods need."
+ ##########################################
+ # Technologies - Advanced Synthesis
+ ##########################################
+ tech_synthetic_advanced:0 "Advanced Synthetic Theory"
+ tech_synthetic_advanced_desc:0 "§HUnlocks Feature:§! Strategic Resource Synthetic Deposits"
+ tech_synthetic_advanced_effects:0 "Continued research that enables further research into creation of Synthetic Strategic Resource Deposits. "
+ tech_crystals_deposit_decision:0 "Synthetic Crystal Growth"
+ tech_crystals_deposit_decision_desc:0 "§HUnlocks Decision:§! $decision_crystals_deposit$ creation."
+ tech_gasses_deposit_decision:0 "Exotic Gas Cultivation Cavern"
+ tech_gasses_deposit_decision_desc:0 "§HUnlocks Decision:§! $decision_gasses_deposit$ creation."
+ tech_motes_deposit_decision:0 "Synthetic Mushroom Motes Mutagens"
+ tech_motes_deposit_decision_desc:0 "§HUnlocks Decision:§! $decision_motes_deposit$ creation."
+ ##########################################
+ # Decisions - Advanced Synthesis
+ ##########################################
+ decision_crystals_deposit:0 "§E3. Advanced - Rare Crystal Patterns§!"
+ decision_crystals_deposit_desc:0 "With a sufficient investment of resources, you can create an artificial Crystaline Cavern.\n This allows for further planetary specialization in Rare Crystal Output. "
+ decision_gasses_deposit:0 "§E3. Advanced - Exotic Gasses§!"
+ decision_gasses_deposit_desc:0 "With a sufficient investment of resources, you can create an artificial Bubbling Swamp.\n This allows for further planetary specialization in Exotic Gas Output."
+ decision_motes_deposit:0 "§E3. Advanced - Volatile Motes§!"
+ decision_motes_deposit_desc:0 "With a sufficient investment of resources, you can create an artificial Dust Cavern.\n This allows for further planetary specialization in Volatile Mote Output."
+ ##########################################
+ # Deposits - Advanced Synthesis
+ ##########################################
+ # we use vanilla resources here, so no need to define anything new
+ ##########################################
+ # Buildings - Building Synthesis
+ ##########################################
+ # we use vanilla resources here, so no need to define anything new

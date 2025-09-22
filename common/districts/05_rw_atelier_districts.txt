@@ -1,0 +1,1080 @@
+@rw_cost = 10000
+@rw_cost_sr = 500
+@rw_maintenance = 5
+@rw_maintenance_sr = 2
+@rw_district_buildtime = 360
+
+# Generic City District
+district_rw_cityd = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = rw_atelier
+	}
+
+	potential = {
+		uses_district_set = rw_atelier
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_rw_nexus
+		district_rw_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = @rw_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+		planet_amenities_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = -5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_warrior_drone_add = 4
+			job_maintenance_drone_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_warrior_drone_add = 4
+			job_maintenance_drone_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_enforcer_add = 4
+			job_entertainer_add = 4
+		}
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_public_works }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = district_rw_cityd_desc
+	}
+}
+##############################
+# Scrapland 
+##############################
+district_rw_scrapland = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = rw_atelier
+	}
+
+	potential = {
+		uses_district_set = rw_atelier
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_rw_nexus
+		district_rw_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = @rw_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+		planet_amenities_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = -5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_robo_Scrapmaster_add = 1
+			job_scrap_miner_drone_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_zerg_Scrapmaster_add = 1
+			job_scrap_miner_drone_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_fallen_empire = no
+			}
+		}
+		modifier = {
+				job_Scrapmaster_add = 1
+				job_scrap_miner_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_public_works }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_planet_Scrapmaster
+	}
+}
+
+# Bastion
+# Recognizing the inefficiencies of our current ability to claim and defend areas of the galaxy, 
+# our government has dedicated resources to cultivating a mobile workforce that can bolster the speed with which we can claim and fortify an area of space.
+#
+district_rw_at_bastion = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = rw_atelier
+	}
+
+	potential = {
+		uses_district_set = rw_atelier
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_rw_nexus
+		district_rw_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = @rw_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = -5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_robo_Casual_Labour_add = 10
+			job_fabricator_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_zerg_Casual_Labour_add = 10
+			job_alloy_drone_add = 6
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_Casual_Labour_add = 10
+			job_foundry_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_public_works }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_planet_Casual_Labour
+	}
+}
+# Armoire
+# Recognizing that our Citadels have become more of a speedbump than a serious challenge to our opponents, this workforce takes pride in making our Citadels durable and frustrating to overcome. 
+#
+district_rw_at_armoire = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = rw_atelier
+	}
+
+	potential = {
+		uses_district_set = rw_atelier
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_rw_nexus
+		district_rw_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = @rw_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = -5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_robo_Armourer_add = 5
+			job_fabricator_add = 4
+
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_zerg_Armourer_add = 5
+			job_alloy_drone_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_Armourer_add = 5 
+			job_foundry_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_public_works }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_planet_Armourer
+	}
+}
+# Experimental Weapons Lab
+# A series of Laboratories focussed to improving the damage output of your starbases. 
+#
+district_rw_at_weapons_lab = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = rw_atelier
+	}
+
+	potential = {
+		uses_district_set = rw_atelier
+	}
+	conversion_ratio = 0.5
+	convert_to = {
+		district_rw_nexus
+		district_rw_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = @rw_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = -5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_robo_mad_scientists_add = 5
+			job_calculator_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_zerg_mad_scientists_add = 5
+			job_brain_drone_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_mad_scientists_add = 5 
+			job_researcher_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_public_works }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_planet_Mad_Scientists
+	}
+}
+# forgemaster district
+# This district serves as a centralized area for the implementation of our "Forgemaster & Forgeprentice" system. 
+#
+district_rw_at_forgemaster = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = rw_atelier
+	}
+
+	potential = {
+		uses_district_set = rw_atelier
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_rw_nexus
+		district_rw_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = @rw_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = -5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_robo_forgemaster_add = 1 
+			job_robo_forgeprentice_add = 2 
+			job_fabricator_add = 4
+			job_artisan_drone_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_zerg_forgemaster_add = 1 
+			job_zerg_forgeprentice_add = 2 
+			job_alloy_drone_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_forgemaster_add = 1 
+			job_forgeprentice_add = 2 
+			job_foundry_add = 4
+			job_artisan_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_public_works }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_planet_Forgeprentice
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_planet_Forgemaster
+	}
+}
+# Shipyard Shipwright District
+# Our Shipwrights are our eyes and ears, they coordinate and work with our designated shipyards to optimize our local workforce. 
+# They improve performance wherever they go to ensure that our shipyards have what they need when they need it, just in time. 
+#
+district_rw_at_shipwright = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = rw_atelier
+	}
+
+	potential = {
+		uses_district_set = rw_atelier
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_rw_nexus
+		district_rw_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = @rw_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = -5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_robo_shipwright_add = 2 
+			job_warrior_drone_add = 4 
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_zerg_shipwright_add = 2 
+			job_warrior_drone_add = 4 
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_shipwright_add = 2 
+			job_soldier_add = 4 
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_public_works }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_planet_Shipwright
+	}
+}
+# Megastructural Support District
+# There is a burning need across our people to make our mark on the galaxy, like many of the ancient precursor races that predate our own people. 
+# This district will help to centralize our development of Megastructures, and improve the speed that they are developed. 
+#
+district_rw_at_megas = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = rw_atelier
+	}
+
+	potential = {
+		uses_district_set = rw_atelier
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_rw_nexus
+		district_rw_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = @rw_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = -5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_robo_LivingMetalSmith_add = 5 
+			job_fabricator_add = 2 
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_zerg_LivingMetalSmith_add = 5 
+			job_alloy_drone_add = 2 
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_LivingMetalSmith_add = 5 
+			job_foundry_add = 2 
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_public_works }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_planet_LivingMetalSmith
+	}
+}

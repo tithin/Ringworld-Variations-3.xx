@@ -1,0 +1,335 @@
+#############################
+########### RULER ###########
+#############################
+#These Bureaucrats work at a local level to implement your edicts, improving £time£ §GEdict Duration! by §G1%!.
+#Having a local representative also helps to improve your influence, increasing monthly £influence£ by §M0.1!."
+Local_Councillor = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_capital
+	clothes_texture_index = 1
+	icon = administrator
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_ruler_job
+
+	resources = {
+		category = planet_Local_Councillor
+		produces = {
+			unity = 12
+			influence = 1
+		}
+		upkeep = {
+			consumer_goods = 16
+			exotic_gases = 8
+		}
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		edict_length_mult = 0.05		
+	}
+
+	weight = {
+		weight = @ruler_job_weight
+		mult = value:job_weights_modifier|JOB|local_councillor|RESOURCE|unity|
+		modifier = {
+			factor = 0.1
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 5
+			has_job = Local_Councillor
+				}
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
+	}
+}
+#
+# Council Aid
+# These individuals work with your Leadership Council to make your will manifest, improving £empire£ £decision£ enactment speed by §G1%!
+Council_Aid = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_palace
+	clothes_texture_index = 1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_ruler_job
+
+	resources = {
+		category = planet_Councillor_Aid
+		produces = {
+			unity = 12
+		}
+		upkeep = {
+			consumer_goods = 16
+			volatile_motes = 8
+		}
+	}
+
+	planet_modifier = {
+		planet_stability_add = 1
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		council_agenda_progress_speed = 0.05
+	}
+
+	weight = {
+		weight = @ruler_job_weight
+		mult = value:job_weights_modifier|JOB|council_aid|RESOURCE|unity|
+		modifier = {
+			factor = 0.1
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 5
+			has_job = Council_Aid
+		}
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+			OR = { # contingency won't purge itself
+				NOT = { exists = event_target:custodian_bot }
+				AND = {
+					exists = event_target:custodian_bot
+					NOT = { species = { is_same_value = event_target:custodian_bot } }
+				}
+			}
+		}
+	}
+}
+# District_Planner
+# These Architects aren't just qualified as Building Designers & Environmental Engineers, but also in Feng Shui.
+# With hundreds of thousands of hours each in Sim City, Cities Skyline, and OpenTTD, they will build the best §M8===D! that your empire has ever seen.
+# Each of these hard working individuals improves your £building£ build speed & to clearance speed of planetary £blocker£ by §G1%!
+District_Planner = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_capital
+	clothes_texture_index = 1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_ruler_job
+
+	resources = {
+		category = planet_District_Planner
+		produces = {
+			energy = 10
+		}
+		upkeep = {
+			consumer_goods = 16
+			rare_crystals = 8
+		}
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		building_time_mult = -0.05
+		planet_clear_blocker_time_mult = -0.05
+	}
+
+	weight = {
+		weight = @ruler_job_weight
+		mult = value:job_weights_modifier|JOB|district_planner|RESOURCE|energy|
+		modifier = {
+			factor = 5
+			has_job = District_Planner
+		}
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+			OR = { # contingency won't purge itself
+				NOT = { exists = event_target:custodian_bot }
+				AND = {
+					exists = event_target:custodian_bot
+					NOT = { species = { is_same_value = event_target:custodian_bot } }
+				}
+			}
+		}
+	}
+}
+#
+# Scientist_Coordinator_desc: "These Coordinators are both Scientists in their own right, as well as capable Administrators.
+# These scientists improve Planetary Researcher job output by §M0.1! in £physics£, £society£ & £engineering£ ."
+#
+Scientist_Coordinator = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_institute
+	clothes_texture_index = 1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_ruler_job
+
+	resources = {
+		category = planet_Scientist_Coordinator
+		produces = {
+			physics_research = 10
+			engineering_research = 10
+			society_research = 10
+		}
+		upkeep = {
+			consumer_goods = 25
+			volatile_motes = 10
+			rare_crystals = 10
+			exotic_gases = 10
+		}
+	}
+# This needs to be triggered planet modifier to get the correct scope.
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_researchers_physics_research_produces_add = 2.5
+		planet_researchers_society_research_produces_add = 2.5
+		planet_researchers_engineering_research_produces_add = 2.5
+	}
+	weight = {
+		weight = @ruler_job_weight
+		mult = value:job_weights_research_modifier|JOB|head_researcher|
+		mult = value:job_weights_modifier|JOB|head_researcher|RESOURCE|unity|FACTOR|0.25|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 2
+			has_living_standard = { type = living_standard_academic_privilege }
+		}
+		modifier = {
+			factor = 5
+			has_job = Scientist_Coordinator
+		}
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
+	}
+}
+# Medical Overseer
+# £job_Medical_Overseer£ $job_Medical_Overseer_plural$ improves your planetary £mod_pop_growth_speed£ & §Y$MOD_POP_GROWTH_SPEED$§! and £mod_planet_pop_assembly_organic_mult£, 
+# §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_MULT$§!, and provide additional 3 additional £job_healthcare£ empire wide."
+#
+Medical_Overseer = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_clinic
+	clothes_texture_index = 1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_ruler_job
+
+	resources = {
+		category = planet_Medical_Overseer
+		upkeep = {
+			consumer_goods = 20
+			exotic_gases = 10
+		}
+	}
+# This needs to be triggered planet modifier to get the correct scope.
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		pop_growth_speed = 0.05
+		planet_pop_assembly_organic_mult = 0.05
+
+	}
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		job_healthcare_add = 3	
+	}
+
+
+	weight = {
+		weight = @ruler_job_weight
+		mult = value:job_weights_research_modifier|JOB|Scientist_Coordinator|
+		modifier = {
+			factor = 5
+			has_job = yes
+		}
+	}
+}

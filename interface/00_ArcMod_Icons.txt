@@ -1,0 +1,226 @@
+	spriteType = {
+		 name = GFX_text_job_Casual_Labour
+		 texturefile = "gfx/interface/icons/jobs/job_Casual_Labour.dds"
+	 }
+	 spriteType = {
+		name = GFX_text_job_ArcModArch
+		texturefile = "gfx/interface/icons/jobs/job_ArcModArch.dds"
+	}
+	spriteType = {
+		name = GFX_text_job_Armourer
+		texturefile = "gfx/interface/icons/jobs/job_Armourer.dds"
+	}
+	spriteType = {
+		name = GFX_text_job_Coach
+		texturefile = "gfx/interface/icons/jobs/job_Coach.dds"
+	}
+	spriteType = {
+		name = GFX_text_job_Council_Aid
+		texturefile = "gfx/interface/icons/jobs/job_Council_Aid.dds"
+	}
+	spriteType = {
+		name = GFX_text_job_Cryptographer
+		texturefile = "gfx/interface/icons/jobs/job_Cryptographer.dds"
+	}
+	spriteType = {
+		name = GFX_text_job_District_Planner
+		texturefile = "gfx/interface/icons/jobs/job_District_Planner.dds"
+	}
+	spriteType = {
+		name = GFX_text_job_Forgemaster
+		texturefile = "gfx/interface/icons/jobs/job_Forgemaster.dds"
+	}
+	spriteType = {
+		name = GFX_text_job_Forgeprentice
+		texturefile = "gfx/interface/icons/jobs/job_Forgeprentice.dds"
+	}
+	spriteType = {
+		name = GFX_text_job_Influencer
+		texturefile = "gfx/interface/icons/jobs/job_Influencer.dds"
+	}
+	spriteType = {
+		name = GFX_text_job_LivingMetalSmith
+		texturefile = "gfx/interface/icons/jobs/job_LivingMetalSmith.dds"
+	}
+	spriteType = {
+		name = GFX_text_job_Local_Councillor
+		texturefile = "gfx/interface/icons/jobs/job_Local_Councillor.dds"
+	}
+	spriteType = {
+		name = GFX_text_job_Mad_Scientists
+		texturefile = "gfx/interface/icons/jobs/job_Mad_Scientists.dds"
+	}
+	spriteType = {
+		name = GFX_text_job_Medical_Overseer
+		texturefile = "gfx/interface/icons/jobs/job_Medical_Overseer.dds"
+	}
+	spriteType = {
+		name = GFX_text_job_Pentester
+		texturefile = "gfx/interface/icons/jobs/job_Pentester.dds"
+	}
+	spriteType = {
+		name = GFX_text_job_Registrar
+		texturefile = "gfx/interface/icons/jobs/job_Registrar.dds"
+	}
+	spriteType = {
+		name = GFX_text_job_Scientist_Coordinator
+		texturefile = "gfx/interface/icons/jobs/job_Scientist_Coordinator.dds"
+	}
+	spriteType = {
+		name = GFX_text_job_Shipwright
+		texturefile = "gfx/interface/icons/jobs/job_Shipwright.dds"
+	}
+	spriteType = {
+		name = GFX_text_archaelogy
+		texturefile = "gfx/interface/icons/text_icons/text_icon_archaelogy.dds"
+	}
+#####
+# robos
+#####
+spriteType = {
+	name = GFX_text_job_robo_Casual_Labour
+	texturefile = "gfx/interface/icons/jobs/job_robo_Casual_Labour.dds"
+}
+spriteType = {
+   name = GFX_text_job_robo_ArcModArch
+   texturefile = "gfx/interface/icons/jobs/job_robo_ArcModArch.dds"
+}
+spriteType = {
+   name = GFX_text_job_robo_Armourer
+   texturefile = "gfx/interface/icons/jobs/job_robo_Armourer.dds"
+}
+spriteType = {
+   name = GFX_text_job_robo_Coach
+   texturefile = "gfx/interface/icons/jobs/job_robo_Coach.dds"
+}
+spriteType = {
+   name = GFX_text_job_robo_Council_Aid
+   texturefile = "gfx/interface/icons/jobs/job_robo_Council_Aid.dds"
+}
+spriteType = {
+   name = GFX_text_job_robo_Cryptographer
+   texturefile = "gfx/interface/icons/jobs/job_robo_Cryptographer.dds"
+}
+spriteType = {
+   name = GFX_text_job_robo_District_Planner
+   texturefile = "gfx/interface/icons/jobs/job_robo_District_Planner.dds"
+}
+spriteType = {
+   name = GFX_text_job_robo_Forgemaster
+   texturefile = "gfx/interface/icons/jobs/job_robo_Forgemaster.dds"
+}
+spriteType = {
+   name = GFX_text_job_robo_Forgeprentice
+   texturefile = "gfx/interface/icons/jobs/job_robo_Forgeprentice.dds"
+}
+spriteType = {
+   name = GFX_text_job_robo_Influencer
+   texturefile = "gfx/interface/icons/jobs/job_robo_Influencer.dds"
+}
+spriteType = {
+   name = GFX_text_job_robo_LivingMetalSmith
+   texturefile = "gfx/interface/icons/jobs/job_robo_LivingMetalSmith.dds"
+}
+spriteType = {
+   name = GFX_text_job_robo_Local_Councillor
+   texturefile = "gfx/interface/icons/jobs/job_robo_Local_Councillor.dds"
+}
+spriteType = {
+   name = GFX_text_job_robo_Mad_Scientists
+   texturefile = "gfx/interface/icons/jobs/job_robo_Mad_Scientists.dds"
+}
+spriteType = {
+   name = GFX_text_job_robo_Medical_Overseer
+   texturefile = "gfx/interface/icons/jobs/job_robo_Medical_Overseer.dds"
+}
+spriteType = {
+   name = GFX_text_job_robo_Pentester
+   texturefile = "gfx/interface/icons/jobs/job_robo_Pentester.dds"
+}
+spriteType = {
+   name = GFX_text_job_robo_Registrar
+   texturefile = "gfx/interface/icons/jobs/job_robo_Registrar.dds"
+}
+spriteType = {
+   name = GFX_text_job_robo_Scientist_Coordinator
+   texturefile = "gfx/interface/icons/jobs/job_robo_Scientist_Coordinator.dds"
+}
+spriteType = {
+   name = GFX_text_job_robo_Shipwright
+   texturefile = "gfx/interface/icons/jobs/job_robo_Shipwright.dds"
+}
+#####
+# zerg
+#####
+spriteType = {
+	name = GFX_text_job_zerg_Casual_Labour
+	texturefile = "gfx/interface/icons/jobs/job_zerg_Casual_Labour.dds"
+}
+spriteType = {
+   name = GFX_text_job_zerg_ArcModArch
+   texturefile = "gfx/interface/icons/jobs/job_zerg_ArcModArch.dds"
+}
+spriteType = {
+   name = GFX_text_job_zerg_Armourer
+   texturefile = "gfx/interface/icons/jobs/job_zerg_Armourer.dds"
+}
+spriteType = {
+   name = GFX_text_job_zerg_Coach
+   texturefile = "gfx/interface/icons/jobs/job_zerg_Coach.dds"
+}
+spriteType = {
+   name = GFX_text_job_zerg_Council_Aid
+   texturefile = "gfx/interface/icons/jobs/job_zerg_Council_Aid.dds"
+}
+spriteType = {
+   name = GFX_text_job_zerg_Cryptographer
+   texturefile = "gfx/interface/icons/jobs/job_zerg_Cryptographer.dds"
+}
+spriteType = {
+   name = GFX_text_job_zerg_District_Planner
+   texturefile = "gfx/interface/icons/jobs/job_zerg_District_Planner.dds"
+}
+spriteType = {
+   name = GFX_text_job_zerg_Forgemaster
+   texturefile = "gfx/interface/icons/jobs/job_zerg_Forgemaster.dds"
+}
+spriteType = {
+   name = GFX_text_job_zerg_Forgeprentice
+   texturefile = "gfx/interface/icons/jobs/job_zerg_Forgeprentice.dds"
+}
+spriteType = {
+   name = GFX_text_job_zerg_Influencer
+   texturefile = "gfx/interface/icons/jobs/job_zerg_Influencer.dds"
+}
+spriteType = {
+   name = GFX_text_job_zerg_LivingMetalSmith
+   texturefile = "gfx/interface/icons/jobs/job_zerg_LivingMetalSmith.dds"
+}
+spriteType = {
+   name = GFX_text_job_zerg_Local_Councillor
+   texturefile = "gfx/interface/icons/jobs/job_zerg_Local_Councillor.dds"
+}
+spriteType = {
+   name = GFX_text_job_zerg_Mad_Scientists
+   texturefile = "gfx/interface/icons/jobs/job_zerg_Mad_Scientists.dds"
+}
+spriteType = {
+   name = GFX_text_job_zerg_Medical_Overseer
+   texturefile = "gfx/interface/icons/jobs/job_zerg_Medical_Overseer.dds"
+}
+spriteType = {
+   name = GFX_text_job_zerg_Pentester
+   texturefile = "gfx/interface/icons/jobs/job_zerg_Pentester.dds"
+}
+spriteType = {
+   name = GFX_text_job_zerg_Registrar
+   texturefile = "gfx/interface/icons/jobs/job_zerg_Registrar.dds"
+}
+spriteType = {
+   name = GFX_text_job_zerg_Scientist_Coordinator
+   texturefile = "gfx/interface/icons/jobs/job_zerg_Scientist_Coordinator.dds"
+}
+spriteType = {
+   name = GFX_text_job_zerg_Shipwright
+   texturefile = "gfx/interface/icons/jobs/job_zerg_Shipwright.dds"
+}

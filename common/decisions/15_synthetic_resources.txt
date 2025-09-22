@@ -1,0 +1,262 @@
+ ##########################################
+ # Decisions - Journeyman Synthesis
+ ##########################################
+decision_arcanite_deposit = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	prerequisites = {
+		 "tech_mine_arcanite_decision" 
+	}
+	icon = decision_arcanite_deposit
+	enactment_time = 360
+
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 5000
+			rare_crystals = 250
+		}
+
+	}
+
+	allow = {
+		num_pops > 25
+	}
+
+	effect = {
+		add_deposit = d_arcanite_deposit
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+
+}
+
+decision_betharian_deposit = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	prerequisites = {
+		 "tech_mine_betharian_decision" 
+	}
+	icon = decision_betharian_deposit
+	enactment_time = 360
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 5000
+			rare_crystals = 250
+		}
+
+	}
+
+	allow = {
+		num_pops > 25
+	}
+
+	effect = {
+		add_deposit = d_betharian_deposit
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+
+}
+
+decision_chimaeric_deposit = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	prerequisites = {
+		 "tech_chimaeric_decision" 
+	}
+	icon = decision_chimaeric_deposit
+	enactment_time = 360
+
+	resources = {
+		category = decisions
+		cost = {
+			food = 5000
+			rare_crystals = 250
+		}
+
+	}
+
+	allow = {
+		num_pops > 25
+	}
+
+	effect = {
+		add_deposit = d_chimaeric_deposit
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+
+}
+ ##########################################
+ # Decisions - Intermediate Synthesis
+ ##########################################
+ decision_alloy_deposit = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	prerequisites = {
+		 "tech_alloys_deposit_decision" 
+	}
+	icon = decision_alloy_deposit
+	enactment_time = 360
+
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 10000
+			rare_crystals = 750
+		}
+
+	}
+
+	allow = {
+		num_pops > 25
+	}
+
+	effect = {
+		add_deposit = d_alloy_deposit_synth
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+
+}
+
+decision_cg_deposit = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	prerequisites = {
+		 "tech_cg_deposit_decision" 
+	}
+	icon = decision_cg_deposit
+	enactment_time = 360
+
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 10000
+			rare_crystals = 750
+		}
+
+	}
+
+	allow = {
+		num_pops > 25
+	}
+
+	effect = {
+		add_deposit = d_cg_deposit_synth
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+
+}
+ ##########################################
+ # Decisions - Advanced Synthesis
+ ##########################################
+ decision_crystals_deposit = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	prerequisites = {
+		 "tech_crystals_deposit_decision" 
+	}
+	icon = decision_crystalline_caverns
+	enactment_time = 720
+
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 10000
+			rare_crystals = 1500
+		}
+
+	}
+
+	allow = {
+		num_pops > 25
+	}
+
+	effect = {
+		add_deposit = d_crystalline_caverns
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+
+}
+
+decision_gasses_deposit = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	prerequisites = {
+		 "tech_gasses_deposit_decision" 
+	}
+	icon = decision_bubbling_swamp
+	enactment_time = 720
+
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 10000
+			exotic_gases = 1500
+		}
+
+	}
+
+	allow = {
+		num_pops > 25
+	}
+
+	effect = {
+		add_deposit = d_bubbling_swamp
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+
+}
+
+decision_motes_deposit = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	prerequisites = {
+		 "tech_motes_deposit_decision" 
+	}
+	icon = decision_dust_caverns
+	enactment_time = 720
+
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 10000
+			volatile_motes = 1500
+		}
+
+	}
+
+	allow = {
+		num_pops > 25
+	}
+
+	effect = {
+		add_deposit = d_dust_caverns
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+
+}

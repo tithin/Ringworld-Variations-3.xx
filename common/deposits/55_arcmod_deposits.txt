@@ -1,0 +1,131 @@
+ ##########################################
+ # Deposits - Journeyman Synthesis
+ ##########################################
+@mid_rare = 0.25
+#minerals 
+d_arcanite_deposit = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	planet_modifier = {
+		building_Arcanite_Crystal_mine_max = 1
+	}
+
+	drop_weight = {
+		weight = @mid_rare
+		modifier = {
+			factor = 2
+			is_planet_class = pc_gaia
+		}
+		modifier = {
+			factor = 0
+			solar_system = {
+				OR = {
+					has_star_flag = empire_home_system
+					has_star_flag = sol_system
+					has_star_flag = deneb_system
+				}
+			}
+		}
+	}
+}
+
+# food
+d_chimaeric_deposit = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	planet_modifier = {
+		building_Chimaeric_food_farm_max = 1
+	}
+
+	drop_weight = {
+		weight = @mid_rare
+		modifier = {
+			factor = 2
+			is_planet_class = pc_gaia
+		}
+		modifier = {
+			factor = 0
+			solar_system = {
+				OR = {
+					has_star_flag = empire_home_system
+					has_star_flag = sol_system
+					has_star_flag = deneb_system
+				}
+			}
+		}
+	}
+}
+ ##########################################
+ # Deposits - Intermediate Synthesis
+ ##########################################
+ d_alloy_deposit_synth = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	planet_modifier = {
+		building_alloy_deposit_synth_max = 1
+	}
+
+	drop_weight = {
+		weight = @mid_rare
+		modifier = {
+			factor = 2
+			is_planet_class = pc_gaia
+		}
+		modifier = {
+			factor = 0
+			solar_system = {
+				OR = {
+					has_star_flag = empire_home_system
+					has_star_flag = sol_system
+					has_star_flag = deneb_system
+				}
+			}
+		}
+	}
+}
+
+d_cg_deposit_synth = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	planet_modifier = {
+		building_cg_deposit_synth_max = 1
+	}
+
+	drop_weight = {
+		weight = @mid_rare
+		modifier = {
+			factor = 2
+			is_planet_class = pc_gaia
+		}
+		modifier = {
+			factor = 0
+			solar_system = {
+				OR = {
+					has_star_flag = empire_home_system
+					has_star_flag = sol_system
+					has_star_flag = deneb_system
+				}
+			}
+		}
+	}
+}

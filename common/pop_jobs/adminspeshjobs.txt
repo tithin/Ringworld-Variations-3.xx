@@ -1,0 +1,171 @@
+##################################
+########### SPECIALIST ###########
+##################################
+Registrar = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_autocurating_vault
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_Registrar
+		produces = {
+			unity = 6
+		}
+		upkeep = {
+			alloys = 6
+			consumer_goods = 12
+			sr_zro = 0.05
+		}
+	}
+		triggered_country_modifier = {
+			potential = {
+				always = yes
+			}
+			empire_size_mult = -0.01
+		}
+			weight = {
+			modifier = {
+				factor = 0
+				owner = {
+					empire_sprawl_over_cap > 0
+				}
+			}
+			modifier = {
+				factor = 2
+				owner = {
+					empire_sprawl_over_cap > 10
+				}
+			}
+			modifier = {
+				factor = 3
+				owner = {
+					empire_sprawl_over_cap > 20
+				}
+			}
+			modifier = {
+				factor = 6
+				owner = {
+					empire_sprawl_over_cap > 40
+				}
+			}
+			modifier = {
+				factor = 5
+				has_job = Registrar
+			}
+		}
+}
+# Influencer
+# Little known to their audience, this influencer is in fact bought and paid for by your empire.
+# \n They work to improve your £empire£ £happiness£ by §G1%!, and to ensure that your £empire£ ethics don't drift.\n 
+# Don't forget to like, share, and subscreebay. You also need to hit that bell, because youtube doesn't always recommend. 
+# That's it guys, I hope you all enjoy the video. 
+Influencer = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_autocurating_vault
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_Influencer
+		produces = {
+			unity = 6
+		}
+		upkeep = {
+			consumer_goods = 12
+			sr_zro = 0.05
+		}
+	}
+		triggered_country_modifier = {
+			potential = {
+				always = yes
+			}
+			pop_happiness = 0.05
+			pop_government_ethic_attraction = 0.01
+		}
+		weight = {
+			weight = @specialist_job_weight # Fairly important job
+			mult = value:job_weights_modifier|JOB|Influencer|RESOURCE|alloys|
+			modifier = {
+				factor = 5
+				has_job = Influencer
+			}
+		}
+	}
+
+# Coach
+# These Life Coaches are assigned to your leaders at birth.\n 
+# As a collective work to improve the speed at which your Leaders grow and learn improving £empire£ £leader_experience_gain£ by §G1!.
+Coach = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_autocurating_vault
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_Coach
+		produces = {
+			unity = 6
+		}
+		upkeep = {
+			consumer_goods = 12
+			sr_zro = 0.05
+		}
+	}
+		triggered_country_modifier = {
+			potential = {
+				always = yes
+			}
+			species_leader_exp_gain = 0.1
+		}
+		weight = {
+			weight = @specialist_job_weight # Fairly important job
+			mult = value:job_weights_modifier|JOB|Coach|RESOURCE|alloys|
+			modifier = {
+				factor = 5
+				has_job = Coach
+			}
+		}
+	}

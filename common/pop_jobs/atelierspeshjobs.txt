@@ -1,0 +1,321 @@
+##################################
+########### SPECIALIST ###########
+##################################
+# Casual_Labour
+# This mobile workforce moves through your empire system to system at your direction, to ensure that your systems are exactly as fortified as you demand.
+# \n Has stared into the void so much that it's absolutely stared back into them.
+# \n Will be among the first to join The Worm. What was, will be.
+# \n Decreases £shipclass_starbase£ £ship_stats_build_time£ and §GDefense platform%! £ship_stats_build_time£ by §G0.25%! per job.
+Casual_Labour = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_smuggling_rings
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_Casual_Labour
+		produces = {
+			alloys = 6
+		}
+		upkeep = {
+			minerals = 12
+			consumer_goods = 4
+		}
+	}
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+	 shipclass_starbase_build_speed_mult = 0.05 ## v0.1 had it at 25% per job which is significantly more than I wanted. 
+	 shipclass_military_station_build_speed_mult = 0.05
+	 starbase_upgrade_speed_mult = 0.05
+	}
+
+	weight = {
+		weight = @specialist_job_weight # Fairly important job
+		mult = value:job_weights_modifier|JOB|Casual_Labour|RESOURCE|alloys|
+		modifier = {
+			factor = 5
+			has_job = Casual_Labour
+		}
+	}
+}
+# Armourer
+# These Metallurgists are specialized in improving the hull and armour of our deep space citadels.
+# \n They take great pride in hiding as many pictorial genital depictions as they can on your starbases.
+# \n These Arcane sigils reinforce your £shipclass_starbase£ £ship_stats_hitpoints£ by §G0.5%! per job.
+#
+Armourer = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_smuggling_rings
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_Armourer
+		produces = {
+			alloys = 6
+		}
+		upkeep = {
+			minerals = 12
+			consumer_goods = 4
+		}
+	}
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		shipclass_starbase_hull_mult = 0.05
+		shipclass_military_station_hull_mult = 0.05
+	}
+
+	weight = {
+		weight = @specialist_job_weight # Fairly important job
+		mult = value:job_weights_modifier|JOB|Casual_Labour|RESOURCE|alloys|
+		modifier = {
+			factor = 5
+			has_job = Armourer
+		}
+	}
+}
+# Mad_Scientists
+# These mad scientists are held on a very tight leash, with a very specific goal in mind: making anyone who would attack our entrenched positions regret it.
+# \n They are constantly working on new and exciting ways to carve brazen images into the Hull of your opponents.
+# \n Improves £shipclass_starbase£ £ship_stats_damage£ by §G0.5%! per job.
+mad_scientists = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_research_lab_3
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_Mad_Scientists
+		produces = {
+			physics_research = 6
+			engineering_research = 6
+			society_research = 6
+		}
+		upkeep = {
+			consumer_goods = 18
+			alloys = 18
+			volatile_motes = 3
+			rare_crystals = 3
+		}
+	}
+		triggered_country_modifier = {
+			potential = {
+				always = yes
+			}
+		shipclass_starbase_damage_mult = 0.10
+		shipclass_military_station_damage_mult = 0.10
+		}
+		weight = {
+			weight = @specialist_job_weight # Fairly important job
+			mult = value:job_weights_modifier|JOB|mad_scientist|researcher|
+			modifier = {
+				factor = 5
+				has_job = mad_scientists
+			}
+		}
+	}
+# Forgeprentice
+# Our Forgeprentices work at the micro level of our empire, improving our Empire output at the cost of additional mineral expense.
+# \n It's inefficient, but if all you need is extra output, our forgeprentices will get the job done.
+# \n Improves Metallurgist £alloys£ output by §G1! per job, at the cost of §RIncreased! Metallurgist £minerals£ upkeep by §R2!.
+forgeprentice = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_foundry_2
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_Forgeprentice
+		produces = {
+			alloys = 6
+		}
+		upkeep = {
+			minerals = 12
+			food = 12
+			volatile_motes = 2
+			consumer_goods = 6
+		}
+	}
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_metallurgists_alloys_produces_add = 1
+		planet_metallurgists_minerals_upkeep_add = 2	
+		planet_artisans_consumer_goods_produces_add = 1
+		planet_artisans_consumer_goods_upkeep_add = 2
+	}
+
+	weight = {
+		weight = @specialist_job_weight # Fairly important job
+		mult = value:job_weights_modifier|JOB|forgeprentice|RESOURCE|alloys|
+		modifier = {
+			factor = 2
+			is_enslaved = yes
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 5
+			has_job = forgeprentice
+		}
+	}
+}
+# LivingMetalSmith
+# These Mega-Engineers believe the key to large scale implementation of Megastructures is Living Metal and they have proven this is true at a micro level.
+# They now work at a macro level to make your will manifest.
+# These individuals increase your §MMegastructure Base Build Speed! by §G0.01! (multiplicative with other increases).
+LivingMetalSmith = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_foundry_3
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_LivingMetalSmith
+		upkeep = {
+			sr_living_metal = 0.1
+			alloys = 20
+		}
+	}
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		megastructure_build_speed_add = 0.05	
+	}
+
+	weight = {
+		weight = @specialist_job_weight # Fairly important job
+		mult = value:job_weights_modifier|JOB|LivingMetalSmith
+		modifier = {
+			factor = 2
+			is_enslaved = yes
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 5
+			has_job = LivingMetalSmith
+		}
+	}
+}
+# Scrapmaster
+Scrapmaster = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_imperial_concession_port
+	icon = miner
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_Scrapmaster
+		produces = {
+			minerals = 25
+		}
+		upkeep = {
+			consumer_goods = 12
+			volatile_motes = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_miners_minerals_produces_add = 4
+	}
+	
+		weight = {
+			weight = @specialist_job_weight # Fairly important job
+			mult = value:job_weights_modifier|JOB|Scrapmaster|RESOURCE|minerals|
+			modifier = {
+				factor = 5
+				has_job = Scrapmaster
+			}
+		}
+	}

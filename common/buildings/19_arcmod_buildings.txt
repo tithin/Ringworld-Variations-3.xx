@@ -1,0 +1,639 @@
+##################################
+# lab t1
+##################################
+building_alchemists_lab_t1 = {
+	base_buildtime = @b2_time
+
+	exempt_from_ai_planet_specialization = no
+	category = manufacturing
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_robo_Alchemist_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_zerg_Alchemist_add = 1
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+				job_Alchemist_add = 1
+				}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 5000
+		}
+		upkeep = {
+			energy = 30
+		}
+	}
+
+	prerequisites = {
+		"tech_alchemists_lab_t1"
+	}
+
+	upgrades = {
+		building_alchemists_lab_t2
+	}
+}
+##################################
+# lab t2
+##################################
+
+building_alchemists_lab_t2 = {
+	base_buildtime = @b2_time
+	can_build = no # upgrade only
+
+	exempt_from_ai_planet_specialization = no
+	category = manufacturing
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_robo_Alchemist_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_zerg_Alchemist_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+				job_Alchemist_add = 2
+				}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 10000
+		}
+		upkeep = {
+			energy = 60
+		}
+	}
+
+	prerequisites = {
+		"tech_alchemists_lab_t2"
+	}
+
+	upgrades = {
+		building_alchemists_lab_t3
+	}
+}
+
+##################################
+# lab t3
+##################################
+
+building_alchemists_lab_t3 = {
+	base_buildtime = @b2_time
+	can_build = no #upgrade only
+
+	exempt_from_ai_planet_specialization = no
+	category = manufacturing
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_robo_Alchemist_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_zerg_Alchemist_add = 3
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+				job_Alchemist_add = 3
+				}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 25000
+		}
+		upkeep = {
+			energy = 90
+		}
+	}
+
+	prerequisites = {
+		"tech_alchemists_lab_t3"
+	}
+}
+##################################
+# archaelogist building
+##################################
+
+building_archaelogy = {
+	base_buildtime = @b1_time
+	can_build = yes
+	can_demolish = yes
+	can_be_ruined = yes
+	can_be_disabled = yes
+	exempt_from_ai_planet_specialization = no
+	empire_limit = 1
+    
+	category = research
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
+		}
+	}
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_robo_ArcmodArch_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_zerg_ArcmodArch_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes 
+			}
+		}
+		modifier = {
+			job_ArcmodArch_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+	prerequisites = {
+		"tech_Archaelogist"
+	}
+}
+##################################
+# Colonist building
+##################################
+
+building_colonist_admin = {
+	base_buildtime = @b1_time
+
+	exempt_from_ai_planet_specialization = no
+
+	category = government
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
+		}
+	}
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_robo_Colonist_admin_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_zerg_Colonist_admin_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes 
+			}
+		}
+		modifier = {
+			job_Colonist_admin_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+	prerequisites = {
+		"tech_colonist_admin_building"
+	}
+}
+
+##################################
+# Spymaster building
+##################################
+
+building_spymaster = {
+	base_buildtime = @b1_time
+
+	exempt_from_ai_planet_specialization = no
+
+	category = government
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
+		}
+	}
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
+		}
+	}
+
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_robo_Pentester_add = 1
+			job_robo_Cryptographer_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_zerg_Pentester_add = 1
+			job_zerg_Cryptographer_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes 
+			}
+		}
+		modifier = {
+			job_Cryptographer_add = 1
+			job_Pentester_add = 1
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		upkeep = {
+			energy = @b3_upkeep
+		}
+	}
+	prerequisites = {
+		"tech_spymaster"
+	}
+}
+
+##################################
+# Synthetic Journeyman Buildings
+##################################
+
+building_Arcanite_Crystal_mine = {
+	base_buildtime = @b1_time
+	is_capped_by_modifier = yes
+	category = resource
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		produces = {
+			minerals = 10
+		}
+	}
+
+	inline_script = {
+		script = jobs/miners_add
+		AMOUNT = 4
+	}
+
+
+	prerequisites = {
+		"tech_mine_arcanite"
+	}
+}
+
+building_Chimaeric_food_farm = {
+	base_buildtime = @b1_time
+	is_capped_by_modifier = yes
+	category = resource
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		produces = {
+			food = 10
+		}
+	}
+
+	inline_script = {
+		script = jobs/farmers_add
+		FARMER_AMOUNT = 4
+		ANGLER_AMOUNT = 1
+	}
+
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_machine_empire = yes
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_agri_drone_add = 4
+	# 	}
+	# }
+
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = {
+	# 			is_hive_empire = yes
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_agri_drone_add = 4
+	# 	}
+	# }
+
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { 
+	# 			is_regular_empire = yes 
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_farmer_add = 4
+	# 	}
+	# }
+
+	prerequisites = {
+		"tech_chimaeric_farm"
+	}
+}
+
+##################################
+# Synthetic Intermediate Buildings - building_alloy_deposit_synth
+##################################
+
+building_alloy_deposit_synth = {
+	base_buildtime = @b1_time
+	is_capped_by_modifier = yes
+	category = manufacturing
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+			alloys = 1000
+		}
+		produces = {
+			alloys = 35
+		}
+	}
+
+	inline_script = {
+		script = jobs/foundry_add
+		AMOUNT = 4
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_metallurgists_alloys_produces_add = 1
+		planet_metallurgists_minerals_upkeep_add = 2	
+	}
+
+	prerequisites = {
+		"tech_alloys_building_synth"
+	}
+}
+
+building_cg_deposit_synth = {
+	base_buildtime = @b1_time
+	is_capped_by_modifier = yes
+	category = manufacturing
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+			consumer_goods  = 1000
+		}
+		produces = {
+			consumer_goods = 35
+		}
+	}
+
+	inline_script = {
+		script = jobs/factory_add
+		AMOUNT = 4
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_artisans_consumer_goods_produces_add = 1
+		planet_artisans_consumer_goods_upkeep_add = 2
+	}
+
+	prerequisites = {
+		"tech_cg_building_synth"
+	}
+}

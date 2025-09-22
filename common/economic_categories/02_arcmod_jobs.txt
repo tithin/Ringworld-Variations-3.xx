@@ -1,0 +1,317 @@
+# CW tools has a sook about ai budget, but it doesn't matter. 
+# ai budget etc is defined in the vanilla world, so leaving it undefined is better. 
+
+planet_Casual_Labour = {
+	use_for_ai_budget = yes
+	icon = "job_Casual_Labour"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_Armourer = {
+	use_for_ai_budget = yes
+	icon = "job_Armourer"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_Mad_Scientists = {
+	use_for_ai_budget = yes
+	icon = "job_Mad_Scientists"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_Forgeprentice = {
+	use_for_ai_budget = yes
+	icon = "job_Forgeprentice"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_LivingMetalSmith = {
+	use_for_ai_budget = yes
+	icon = "job_LivingMetalSmith"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_Registrar = {
+	use_for_ai_budget = yes
+	icon = "job_Registrar"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_Influencer = {
+	use_for_ai_budget = yes
+	icon = "job_Influencer"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_ArcModArch = {
+	use_for_ai_budget = yes
+	icon = "job_ArcModArch"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_Cryptographer = {
+	use_for_ai_budget = yes
+	icon = "job_Cryptographer"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_PenTester = {
+	use_for_ai_budget = yes
+	icon = "job_PenTester"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_Coach = {
+	use_for_ai_budget = yes
+	icon = "job_Coach"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_Local_Councillor = {
+	use_for_ai_budget = yes
+	icon = "job_Local_Councillor"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_Forgemaster = {
+	use_for_ai_budget = yes
+	icon = "job_Forgemaster"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_Shipwright = {
+	use_for_ai_budget = yes
+	icon = "job_Shipwright"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_Councillor_Aid = {
+	use_for_ai_budget = yes
+	icon = "job_Councillor_Aid"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_Scientist_Coordinator = {
+	use_for_ai_budget = yes
+	icon = "job_Scientist_Coordinator"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_Medical_Overseer = {
+	use_for_ai_budget = yes
+	icon = "job_Medical_Overseer"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_District_Planner = {
+	use_for_ai_budget = yes
+	icon = "job_District_Planner"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_Scrapmaster = {
+	use_for_ai_budget = yes
+	icon = "job_miner"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_Alchemists = {
+	use_for_ai_budget = yes
+	icon = "job_alchemist"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_Colonist_admin = {
+	use_for_ai_budget = yes
+	icon = "job_alchemist"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}

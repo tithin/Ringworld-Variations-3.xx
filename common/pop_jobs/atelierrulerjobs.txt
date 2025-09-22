@@ -1,0 +1,131 @@
+# Leader
+# Job - Forgemaster - done
+# Job - Shipwright - done
+#############################
+########### RULER ###########
+#############################
+# "Our Forgemasters work at a macro level of our empire, reviewing and coordinating output from both our local hubs and their Forgeprentices,
+# to ensure that our Shipwrights have what they need when they need it.
+# \N These dedicated members of your empire serves to improve £alloys£  output by §G1%!."
+Forgemaster = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_foundry_3
+	clothes_texture_index = 1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_ruler_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_Forgemaster
+		produces = {
+			alloys = 10
+			consumer_goods = 10
+		}
+		upkeep = {
+			minerals = 40
+		}
+	}
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		country_alloys_produces_mult = 0.05
+		country_consumer_goods_produces_mult = 0.05	
+	}
+
+	weight = {
+		weight = @ruler_job_weight
+		mult = value:job_weights_modifier|JOB|forgemaster|RESOURCE|alloys|FACTOR|0.25|
+			modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 2
+			has_living_standard = { type = living_standard_academic_privilege }
+		}
+		modifier = {
+			factor = 5
+			has_job = Forgemaster
+		}
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
+	}
+}
+#
+# "Our Shipwrights are our eyes and ears, they coordinate and work with our designated shipyards to optimize our local workforce.
+# \n They improve performance wherever they go to ensure that our shipyards have what they need when they need it, just in time.
+# \n They improve £ship_stats_build_time£ by §G1%! Empire Wide. "
+#
+Shipwright = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_private_shipyards
+	clothes_texture_index = 1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_ruler_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+			resources = {
+				category = planet_Shipwright
+				produces = {
+					unity = 10
+				}
+				upkeep = {
+					volatile_motes = 10
+					rare_crystals = 10
+					alloys = 20
+				}
+			}
+			triggered_country_modifier = {
+				potential = {
+					always = yes
+				}
+				shipclass_colonizer_build_speed_mult = 0.1
+				shipclass_constructor_build_speed_mult = 0.1
+				shipclass_military_build_speed_mult = 0.1
+				shipclass_military_special_build_speed_mult = 0.1
+				shipclass_military_station_build_speed_mult = 0.1
+			}
+		
+			weight = {
+				weight = @ruler_job_weight # Fairly important job
+				mult = value:job_weights_modifier|JOB|shipwright|RESOURCE|alloys|
+				modifier = {
+					factor = 5
+					has_job = Shipwright
+				}
+			}
+		}

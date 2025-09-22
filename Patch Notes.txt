@@ -1,0 +1,277 @@
+# # 
+# ==============================
+# Patch Notes - 08/09/2024
+# ==============================
+
+# MORE STUFF!
+
+# - Advanced Synthesis!
+# - No new custom buildings, or custom deposits this time, we're going entirely vanilla here but giving you the power to manually place the deposits related to particular strategic resources. 
+# - I know I said the plans were on hold but hey, guess what. My focus meds still had some juice in the oven so I kept going. 
+# - There's more in oven for Synthesis but that'll do for today. 
+
+
+# ==============================
+# Patch Notes - 08/09/2024
+# ==============================
+
+# MORE STUFF!
+
+# - Intermediate Synthesis! 
+# - Focussed on the Intermediate items in your supply chain, Alloys & Consumer Goods. 
+# - Think of this as an interim step towards scaling up your tall empire before you can get your hands on the Alternative Ringworlds
+# - My initial plans for further Synthesis Levels are currently on hold until the new patch is out because they're changing how the SR producing deposit buildings work. (which is a shame cos I had it all planned out on paper and stuff, and now I have to sulk and not use it. 
+# - I discovered inline scripts too, so I'll probably go back and clean up what the district files look like at some point. 
+# - I also know that the new CG & Alloy buildings icons aren't symettrical and it IRRITATES THE HELL OUT OF ME.
+
+# ==============================
+# Patch Notes - 24/08/2024
+# ==============================
+
+# Localisation
+
+# - I swear, half of any bug fixing in this game is localization but there we go.
+# - Report it if you see it, but also, no one's posted a single comment in uh, six months this thing's been live, so vOv
+
+# New Stuff:
+
+# Implemented Planetary Ascension Archetypes for the Ringworld Variants.
+# One for Augmentation (improving resource output) and one for Subsidization (reducing upkeep).
+
+# Longer term mod plans are locked down at this point and I simply need to yknow, write the stuff. So watch this space.
+
+# ==============================
+# Patch Notes - 27/07/2024
+# ==============================
+
+# - Misc
+
+# - Added additional conditions to remove or prevent rolling artifact action technologies in the event you already had the research completed that it would have given you progress in. 
+# - Amended Artifact action conditions, previously the artifact would remain in your list, unusable, if the technology it would grant was already researched. Now it simply will no longer appear. 
+# - Back end job movements to accomodate changes made since the mod first came out. Principally, jobs that used to be ringworld district specific (such as PenTester), have been moved out of the district file, and into their respective building file.
+# - Further localisation improvements to tidy up the text on techs. 
+# 	- Figured out how to make it so that job mod icons showed up correctly. If you're thick like me, they're stored in /interface/icons/modifiers
+
+# - New
+
+# - Implemented "Synthetic" deposits of basic resources. These operate essentially how the Betharian deposit works but the deposits themselves are craftable on each planet. 
+# 	- New technology: Synethic Base. Pre-requisite for further investment in each of the synthetic resources. Researching Synthetic base unlocks 3 new technologies. 
+# 	- In turn, these new technologies allow crafting planetary deposits focussed on basic resources to allow further planetary specialization. Once the planetary deposit is placed, you can then further unlock a technology per resource for a planetary building. 
+# 	- Each of these buildings is a 1:1 mirror of the Beltharian building in terms of jobs provided. 
+# 		- Arcanite: Focussed on Mineral production
+# 		- Beltharian: No changes from Vanilla, simply allows you to add the deposit to the planet, the unlock chain has not changed. There should be no impact to any other mods that interact with Beltharian deposits, as neither the deposit, nor building is touched. The decision simply places a Beltharian deposit on the planet. 
+# 		- Chimaeric: Focussed on Food production.
+
+# ==============================
+# Patch Notes - 01/07/2024
+# ==============================
+		
+# - Fixed the Spymaster Enclave building for Zergs & Robos. Will now correctly grant you one cryptographer and pentester.
+		
+# ==============================
+# Patch Notes - 24/06/2024, 2
+# ==============================
+
+# - Caught an edge case of the Robo Medical Overseer providing Healthcare jobs (organic growth + build speed). Replaced with Replicators.
+
+# ==============================
+# Patch Notes - 24/06/2024
+# ==============================
+
+# - Further refined district code - worked fine until you changed empire type, so should continue to enable compat with mods such as ACOT / DOA that change empire type.
+# - Set a Building Limit of 1 on the Archaelogist building. As the Archaelogists were as strong as a regular scientist and came with the bonus of archaelogy speed, it had the unintended side-effect of having the AI spam the buildings.
+# - Reviewed and updated upkeep requirements for Robos / Zergs to replace types of resources that aren't germane to their playstyle (zro, food, consumer goods etc). Too many to list. Just accept it. Not that anyone reads this.
+# - Fixed up Robos / Zergs stratum listing for the purposes of Aesthetics. No longer will your complex drones be referred to as "specialists". Rejoice.
+# - Unintended Side Effect: all ruler class jobs for Robos / Zerg are now complex / specialist job analogues, as there are no ruler analogues for these playstyles. They still have a ruler job weighting so will take priority over specialist jobs.
+# - Tightened up Localization a bit, but not by much lol.
+
+# ====================
+# Patch Notes - 15/06/2024
+# ====================
+
+# Re-implemented the two ringworld districts code.
+
+# Worked fine without machine age DLC, if you had it, they didn't show up once the ringworlds were created.
+
+# Should now work.
+
+
+
+# ==============================
+# Patch Notes - 11/05/2024
+# ==============================
+
+# - Enabled for both Robobros & Zerglings. 
+# 	- Just in time for the Machine Age. 
+# - Removed Bureaucrat jobs from the Registrar district because it was a pre-ftl job and not what I had thought it was. 
+
+# Atelier Jobs - 
+
+# - Casual Labourer - buffed to 5% per role and localization updated. 
+# - Armourer - buffed to 5% per role and localization updated. 
+# - Mad Scientist - Reduced SR use from 6 to 3, and buffed from 0.5% to 1% per role. Localization updated. 
+# - Forgeprentice - Introduced Consumer Good upkeep. 
+# - Living Metal Smith - Slightly reduced Alloys upkeep and buffed base Megastructure build speed from 0.02 per day to 0.05. 
+# - Forgemaster - Buffed from 2% to 5% Alloys / CG output per pop, empirewide. At a high level it didn't make sense that the Forgeprentices could have such a substantial impact to Alloys output whereas their nominal forgemasters didn't scale quite as much. Would be interested in feedback here. 
+# - Shipwrights - at only 1% speed increase, there's functionally no reason to build these relative to the pop investment required. Buffed to 10%. Again, feedback welcome. 
+# - Scrapmaster - Fixed localisation
+
+# Admin Jobs -
+ 
+# - Registrar - Removed the Dark Matter Upkeep here, but retained the Zro upkeep. 
+# - Influencer / youtuber - Also removed the Dark Matter Upkeep here, but retained the Zro upkeep. Buffed Empirewide Happiness output from 1% to 5%. 
+# - Local Councillor - Buffed Influence output from 0.5 to 1. Why not. 
+# - Councillor Aid - Buffed Council Agenda speed from 1% to 5%. 
+# - District Planner - Buffed Build Speed / Blocker Clear speed from 5% to 20%. 
+# - Scientist Coordinators - Buffed Output from 0.1 to each researcher to 2.5. Mentality is that most people using this mod are probably using a lot of mods. In comparison to something like ZOFE's Utopian Ringworld, it adds 5 flat per district built so is in essence infinitely scaling. Adding 2.5 per pop seems like an ideal middle ground with the expectation being that you will probably jettison the coordinators by the time the Utopian RW is available. 
+# - Medical Overseer District / Jobs - I would be interested in feedback here. I think by the time you get to these ringworlds the district itself is redundant, but I do feel that there's potentially room here to re-implement in a similar way as a very expensive building. 
+
+# Buildings - 
+
+# - Alchemist Building - Upgrade tree now works correctly. Should no longer see all three versions of the building available to build. Upgrade it as intended.
+# - Colonial Administration Hub - Added a Building Icon. Oops. 
+
+# Building Jobs - 
+
+# - Archaelogist - Reduced CG upkeep from 6 to 3, it's intended as a low level job so the upkeep was too high and was a remnant of when it was part of the admin district. 
+# - Cryptographer & Pentester - Reduced Exotic Gases upkeep from 20 to 10. It was just a little too much even with Alchemists helping. 
+# - Coach - No changes, but putting on notice that as soon as my ass can figure out a way to make a job continually tick a silent event, I'll be changing them to instead grant passive leader XP per month. 
+
+# Technologies & Decisions
+
+# - Implemented three new technologies that in turn provide a minor artifact decision.
+# 	- Each of these decisions is intended to ease progress to key technologies at a hefty Minor Artifacts Cost. 
+# 	- One Action to provide 50% progress to each of the following techs, Gateway Activation, Gateway Construction and Mega Engineering.
+# 	- These actions brought to you by a ZOFE run that saw me not roll mega engineering until 2320 while going up against a mega-crisis with megastructures out the wazoo. 
+
+
+# ==============================
+# Patch Notes - 11/05/2024
+# ==============================
+
+# - Enabled for both Robobros & Zerglings. 
+# 	- Just in time for the Machine Age. 
+# - Removed Bureaucrat jobs from the Registrar district because it was a pre-ftl job and not what I had thought it was. 
+
+# Atelier Jobs - 
+
+# - Casual Labourer - buffed to 5% per role and localization updated. 
+# - Armourer - buffed to 5% per role and localization updated. 
+# - Mad Scientist - Reduced SR use from 6 to 3, and buffed from 0.5% to 1% per role. Localization updated. 
+# - Forgeprentice - Introduced Consumer Good upkeep. 
+# - Living Metal Smith - Slightly reduced Alloys upkeep and buffed base Megastructure build speed from 0.02 per day to 0.05. 
+# - Forgemaster - Buffed from 2% to 5% Alloys / CG output per pop, empirewide. At a high level it didn't make sense that the Forgeprentices could have such a substantial impact to Alloys output whereas their nominal forgemasters didn't scale quite as much. Would be interested in feedback here. 
+# - Shipwrights - at only 1% speed increase, there's functionally no reason to build these relative to the pop investment required. Buffed to 10%. Again, feedback welcome. 
+# - Scrapmaster - Fixed localisation
+
+# Admin Jobs -
+ 
+# - Registrar - Removed the Dark Matter Upkeep here, but retained the Zro upkeep. 
+# - Influencer / youtuber - Also removed the Dark Matter Upkeep here, but retained the Zro upkeep. Buffed Empirewide Happiness output from 1% to 5%. 
+# - Local Councillor - Buffed Influence output from 0.5 to 1. Why not. 
+# - Councillor Aid - Buffed Council Agenda speed from 1% to 5%. 
+# - District Planner - Buffed Build Speed / Blocker Clear speed from 5% to 20%. 
+# - Scientist Coordinators - Buffed Output from 0.1 to each researcher to 2.5. Mentality is that most people using this mod are probably using a lot of mods. In comparison to something like ZOFE's Utopian Ringworld, it adds 5 flat per district built so is in essence infinitely scaling. Adding 2.5 per pop seems like an ideal middle ground with the expectation being that you will probably jettison the coordinators by the time the Utopian RW is available. 
+# - Medical Overseer District / Jobs - I would be interested in feedback here. I think by the time you get to these ringworlds the district itself is redundant, but I do feel that there's potentially room here to re-implement in a similar way as a very expensive building. 
+
+# Buildings - 
+
+# - Alchemist Building - Upgrade tree now works correctly. Should no longer see all three versions of the building available to build. Upgrade it as intended.
+# - Colonial Administration Hub - Added a Building Icon. Oops. 
+
+# Building Jobs - 
+
+# - Archaelogist - Reduced CG upkeep from 6 to 3, it's intended as a low level job so the upkeep was too high and was a remnant of when it was part of the admin district. 
+# - Cryptographer & Pentester - Reduced Exotic Gases upkeep from 20 to 10. It was just a little too much even with Alchemists helping. 
+# - Coach - No changes, but putting on notice that as soon as my ass can figure out a way to make a job continually tick a silent event, I'll be changing them to instead grant passive leader XP per month. 
+
+# Technologies & Decisions
+
+# - Implemented three new technologies that in turn provide a minor artifact decision.
+# 	- Each of these decisions is intended to ease progress to key technologies at a hefty Minor Artifacts Cost. 
+# 	- One Action to provide 50% progress to each of the following techs, Gateway Activation, Gateway Construction and Mega Engineering.
+# 	- These actions brought to you by a ZOFE run that saw me not roll mega engineering until 2320 while going up against a mega-crisis with megastructures out the wazoo. 
+
+# ==============================
+# Patch Notes - 03/04/2024
+# ==============================
+# - Implemented Pre-requisite technologies to research the alteration decisions. 
+# 	- One per Planet class. 
+# 	- Requires Ringworld technology researched. 
+
+# - Implemented Decision to convert back to a Standard Ringworld. 
+# 	- All my homies STILL hate decisions, but don't say I never do anything for y'all.
+# 	- No technology needed, you already know how to make a ringworld by this point, and your people are aware of the arcane function of a bulldozer. 
+
+# - Restricted both Alteration decisions to non-gestalts, both as a means of limiting the ability to those intended to them, and in anticipation of their eventual implementation for Robo-bros and zerglings. 
+# 	- Didn't limit the Alteration decision to revert though, because that seems mean and I have NFI what will happen if a gestalt captures one of these planets lol
+
+# - Added a Scrapland district to the Atelier RW with the following roles
+# 	- Scrap Miner, just as you know it, and love it. 
+# 	- Scrapmaster, these Cigar chewing hard fightin' pops keep your scrap miners in line and focussed on the hard things in life, churning out minerals. 
+
+# - Mad Alchemist building, upgradable 3x. 
+# 	- Not available to Gestalts! Yet! 
+# 	- Derived from a series of new technologies available after researching Atelier RW. 
+# 	- Helps to offset the wild amounts of SR you need to run this stuff. Produces 5x SR each for a very high mineral / energy upkeep.
+
+# - Stripped the various SR producing jobs from the Forgemaster district, considering introduction of the Alchemist building and its more efficient output per job. 
+
+# - Stripped the various vanilla scrapper jobs from the Forgemaster district.
+# 	- use the new district. 
+
+# - Added an Archaelogist building.
+# 	- Moved Archaelogist out of the Admin/University District, and into their own seperate building, available in the early game. 
+# 	- Derived from a new technology that requires "Automated Exploration"
+# 	- Considering their role to boost Archaelogy excavation speed and the greater value there in the early game, makes more sense to make it available much earlier than mid to late game. 
+# 	- Rebalanced the upkeep considering their availability. 
+	
+# - Added a Colony Organizer Building
+# 	- Derived from a new technology that requires Colonial Administration
+# 	- Introduces two roles per building, improves colony settling speed by 25% per role.
+# 	- Don't do what I do and accidentally call them "colonists" it confuses the game a great deal. 
+	
+# - Added a Spymaster Building
+# 	- Derived from a new technology that requires both of the final Encryption / Decryption technologies. 
+# 	- Considered insufficiently interesting to warrant their own district under Admin.
+# 	- No other changes to upkeep etc, all that stuff remains as is. 
+# 	- I literally just commented out the district code, so if you're playing an existing game, just go to the file and uncomment it back in tbh. 
+
+# - Coaches
+# 	- Reduced number of coach roles available per district from 10 per, to 3. 
+# 	- Increased modifier from 1% per role to 10%. 
+# 	- Removed the Dark Matter upkeep, but kept the zro upkeep. 
+# 	- I can absolutely imagine some sort of #lifecoach doing lines of Zro to keep up their energy, not so much Dark Matter.
+	
+# - Added a localisation for "mod_planet_artisans_consumer_goods_upkeep_add" 
+# 	- even though it's a vanilla mod, it was never localised? :cmon:
+	
+# ==============================
+# Patch Notes 24/03/24
+# ==============================
+# - Now tested with Gigas
+# 	- Did you know that gigas had its own seperate definition for normal assed ringworlds? I didn't.
+# 	- Did you know they're not defined as planet classes, they use the vanilla ringworld definitions? I didn't.
+# 	- Did you know that the way gigas implements its models for jumbo ringworlds doesn't use its own entities or models, they're based on vanilla ringworlds? I didn't.
+# 	- Did you know that because of the above, when the decision takes effect the habitable segment shrinks up like it's cold outside? I didn't.
+# 	- All of the above are now tested, and fixed and there's inherent compatability with gigas built into the mod.
+# 	- Also you'll notice the habitable segments are significantly larger than the seams that connect them. I aint fixing that. Not yet at least.
+
+# - Job Weights now FIXED!
+# 	- Did you know that pops, every single month, reevaluate which jobs they want and that if you don't give their role weighting a factor of 5 if they already have that job, they'll ditch it and everyone will try and get that job?
+# 	- they'll be succesful too
+# 	- Right up until the person behind them makes them unemployed
+# 	- and the person behind them
+# 	- etc etc
+# 	- big thanks to TTFTCuts & Artwolf from the gigas discord for pointing me in the right direction
+
+# - Added a "City" district to each Variant that houses a few clerks, a few entertainers, and a few enforcers.
+# 	- Honestly, it's hilarious how hard crime spikes on a planet with no amenities.
+# 	- What, don't you like working in an exotic weapons lab and doing nothing else outside of work?
+# 	- They'd never survive earth capitalism.
+# 	- Don't think too hard about what entertainers do for a living in the bloated hellscape of 2332
+
+# - Buffed Forgeprentice - Added Consumer goods output.
+# - Buffed Council Aid Output to 0.5 influence.
+# - Buffed Archaelogist to 10% excavation speed, because 1% excavation rate by the time you get them is laughable.
+# - Various other buffs I forgot to write down as I went. Sorry

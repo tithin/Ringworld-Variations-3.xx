@@ -1,0 +1,938 @@
+@rw_cost = 10000
+@rw_cost_sr = 500
+@rw_maintenance = 5
+@rw_maintenance_sr = 2
+@rw_district_buildtime = 360
+#==============================
+# Generic City District
+#==============================
+district_rw_cityt = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = rw_admin
+	}
+
+	potential = {
+		uses_district_set = rw_admin
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_rw_nexus
+		district_rw_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = @rw_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+		planet_amenities_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = -5
+		}
+	}
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_warrior_drone_add = 4
+			job_maintenance_drone_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_warrior_drone_add = 4
+			job_maintenance_drone_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_enforcer_add = 4
+			job_entertainer_add = 4
+		}
+	}
+
+
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_public_works }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = district_rw_cityd_desc
+	}
+}
+
+
+
+
+
+#==============================
+# Registry
+# This District houses the Beating Heart of your Adminstrative empire. The local residents work to reduce inefficiencies of scale by reducing the relative size of your empire. 
+#==============================
+district_rw_admin_registry = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = rw_admin
+	}
+
+	potential = {
+		uses_district_set = rw_admin
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_rw_nexus
+		district_rw_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = @rw_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = -5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_robo_Registrar_add = 10
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_zerg_Registrar_add = 10
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_Registrar_add = 10
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_public_works }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_planet_Registrar
+	}
+}
+#==============================
+# Governmental
+# The Beating Heart of Local Government. This District is home to several individuals with a wide variety of skills that help to ease your administrative burden. 
+#==============================
+district_rw_admin_govt = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = rw_admin
+	}
+
+	potential = {
+		uses_district_set = rw_admin
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_rw_nexus
+		district_rw_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = @rw_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = -5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_robo_Local_Councillor_add = 2
+			job_robo_Influencer_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_zerg_Local_Councillor_add = 2
+			job_zerg_Influencer_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_Local_Councillor_add = 2
+			job_Influencer_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_public_works }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_planet_Local_Councillor
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_planet_Influencer
+	}
+}
+#==============================
+# Medical
+# The Administrative heart of your peoples medical needs. 
+# A hospital in its own right, it also works with local branches on your other planets to meet the healthcare needs of your population. 
+# Worth noting that if you mention the phrase "Lupus" to them, they are likely to have something of a mental breakdown
+#==============================
+district_rw_admin_healthcare = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = rw_admin
+	}
+
+	potential = {
+		uses_district_set = rw_admin
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_rw_nexus
+		district_rw_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = @rw_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = -5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_robo_medical_overseer_add = 1 
+			job_replicator_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_zerg_medical_overseer_add = 1 
+			job_healthcare_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_medical_overseer_add = 1 
+			job_healthcare_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_public_works }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_planet_Medical_Overseer
+	}
+}
+#==============================
+# Spymaster
+# This district doesn't exist. It shows up on no maps, and no one goes close to it. 
+# Unrelatedly if someone were to go near it then they would suffer an unfortunate accident relating to several bullets to the back of the head, with their body stuffed into a suitcase and thrown off a cliff. 
+# It would later be ruled a suicide by investigating police after a few hours. 
+# If it DID exist, then it would absolutely be somewhere that your Spymasters would congregate to organise the defense and offense of your Empire's electronic warfare division. 
+#==============================
+# district_rw_admin_spah = {
+#	base_buildtime = @rw_district_buildtime
+#	is_capped_by_modifier = no
+#	exempt_from_ai_planet_specialization = yes
+#
+#	show_on_uncolonized = {
+#		exists = from
+#		from = { is_regular_empire = yes }
+#		uses_district_set = rw_admin
+#	}
+#
+#	potential = {
+#		exists = owner
+#		owner = { is_regular_empire = yes }
+#		uses_district_set = rw_admin
+#	}
+#
+#	conversion_ratio = 0.5
+#	convert_to = {
+#		district_rw_nexus
+#		district_rw_hive
+#	}
+#
+#	resources = {
+#		category = planet_districts
+#		cost = {
+#			minerals = @rw_cost
+#		}
+#		upkeep = {
+#			energy = @rw_maintenance
+#		}
+#	}
+#
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = {
+#				has_valid_civic = civic_agrarian_idyll
+#			}
+#		}
+#		modifier = {
+#			planet_housing_add = -5
+#		}
+#	}
+#
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = {
+#				is_regular_empire = yes
+#				is_fallen_empire = no
+#			}
+#		}
+#		modifier = {
+#			job_Cryptographer_add = 1 # you shouldn't need many of these districts to break the intel system completely over your knee
+#			job_Pentester_add = 1
+#			job_enforcer_add = 2
+#		}
+#	}
+#
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { has_active_tradition = tr_prosperity_public_works }
+#		}
+#		modifier = {
+#			planet_housing_add = 5
+#		}
+#	}
+#
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = {
+#				has_technology = tech_housing_1
+#			}
+#		}
+#		modifier = {
+#			planet_housing_add = 5
+#		}
+#	}
+#
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = {
+#				has_technology = tech_housing_2
+#				NOT = { has_valid_civic = civic_agrarian_idyll }
+#			}
+#		}
+#		modifier = {
+#			planet_housing_add = 5
+#		}
+#	}
+#
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_regular_empire = yes }
+#		}
+#		text = job_planet_Cryptographer
+#	}
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_regular_empire = yes }
+#		}
+#		text = job_planet_Pentester
+#	}
+#}
+#==============================
+# City Planner
+# This District is the home to your Architects and to the Master Builders guild.
+# They work with your local Governers and Administrators to improve the speed at which your planets construct buildings and clear planetary deposits. 
+#==============================
+district_rw_admin_builder = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = rw_admin
+	}
+
+	potential = {
+		uses_district_set = rw_admin
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_rw_nexus
+		district_rw_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = @rw_maintenance
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = -5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_robo_District_Planner_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_zerg_District_Planner_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_District_Planner_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_public_works }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_planet_District_Planner
+	}
+}
+#==============================
+# University Campus
+# This District is the home to your Architects and to the Master Builders guild. 
+# They work with your local Governers and Administrators to improve the speed at which your planets construct buildings and clear planetary deposits. 
+#==============================
+district_rw_admin_uni = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = rw_admin
+	}
+
+	potential = {
+		uses_district_set = rw_admin
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_rw_nexus
+		district_rw_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = @rw_maintenance
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = -5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_robo_Coach_add = 3
+			job_robo_Scientist_Coordinator_add = 1
+			job_calculator_add = 10
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_zerg_Coach_add = 3
+			job_zerg_Scientist_Coordinator_add = 1
+			job_brain_drone_add = 10
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_fallen_empire = no
+			}
+		}
+		modifier = {
+			job_Coach_add = 3
+			job_Scientist_Coordinator_add = 1
+			job_researcher_add = 10
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_public_works }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_planet_Scientist_Coordinator
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_planet_Coach
+	}
+}

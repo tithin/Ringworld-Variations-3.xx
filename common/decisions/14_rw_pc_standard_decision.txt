@@ -1,0 +1,108 @@
+#########################################
+# RW_Standard PC Class change
+# This Decision Converts a Non-standard Atelier Ringworld (PC_RW_AT) back to a Standard RW district
+#########################################
+decision_rw_standard_project = {
+	owned_planets_only = yes
+	icon = decision_rw_standard_project
+
+	enactment_time = 1800
+	resources = {
+		category = decisions
+		cost = {
+				minerals = 20000
+				alloys = 10000
+		}
+	}
+
+	potential = {
+		NOR  = {
+			is_artificial = no
+			is_planet_class = pc_habitat # would be funny if we could, but :nofunallowed:
+			is_planet_class = pc_ringworld_habitable # why would it need to turn into itself?
+		}
+		is_artificial = yes
+		is_planet_class = pc_rw_at_habitable
+		exists = owner
+		owner = { has_technology = "tech_ring_world"	 }
+	}
+
+	allow = {
+		if = {
+			limit = { owner = { is_ai = no } }
+			custom_tooltip = {
+				is_planet_class = pc_rw_at_habitable
+			}
+		}
+	}
+	effect = {
+		# Change PC to standard RW
+		custom_tooltip = decision_rw_standard_project_effects
+		hidden_effect = {
+			change_pc = pc_ringworld_habitable
+		}
+	}
+
+	ai_weight = {
+		weight = 0 # the AI will not use this. 
+		modifier = {
+			factor = 0
+			exists = owner
+		}
+	}
+}
+
+#########################################
+# RW_Standard PC Class change
+# This Decision Converts a Non-standard Admin Ringworld (PC_RW_AT) back to a Standard RW district
+#########################################
+
+decision_rw_admin_standard_project = {
+	owned_planets_only = yes
+	icon = decision_rw_standard_project
+
+	enactment_time = 1800
+	resources = {
+		category = decisions
+		cost = {
+				minerals = 20000
+				alloys = 10000
+		}
+	}
+
+	potential = {
+		NOR  = {
+			is_artificial = no
+			is_planet_class = pc_habitat # would be funny if we could, but :nofunallowed:
+			is_planet_class = pc_ringworld_habitable # why would it need to turn into itself?
+		}
+		is_artificial = yes
+		is_planet_class = pc_rw_admin_habitable
+		exists = owner
+		owner = { has_technology = "tech_ring_world"	 }
+	}
+
+	allow = {
+		if = {
+			limit = { owner = { is_ai = no } }
+			custom_tooltip = {
+				is_planet_class = pc_rw_admin_habitable
+			}
+		}
+	}
+	effect = {
+		# Change PC to standard RW
+		custom_tooltip = decision_rw_admin_standard_project_effects
+		hidden_effect = {
+			change_pc = pc_ringworld_habitable
+		}
+	}
+
+	ai_weight = {
+		weight = 0 # the AI will not use this. 
+		modifier = {
+			factor = 0
+			exists = owner
+		}
+	}
+}
